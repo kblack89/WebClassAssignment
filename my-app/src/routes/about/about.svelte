@@ -36,16 +36,12 @@ body {
 <body>
 
 <div class="topnav">
-  <a class="active" href="#page.svelte">Home</a>
+  <a class="active" href="/">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about.svelte">About</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
 
 </body>
 </html>
