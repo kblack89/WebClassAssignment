@@ -1,0 +1,42 @@
+WEBSITE MODERN ELEMENTS 
+
+The modern website elements that I have found are from three websites. I shall list them below and may use all of them or some dependiong on how my website is looking.
+
+ELEMENTS:
+-Buttons move from right to left by their own in a looped cycle
+
+-Animated image 
+
+-Menu gets bigger vertically as I scrolled down the page and gets thinner as I scroll back towards it
+
+-Images glow when hovered over
+
+-Images and text (elements on their own as cards)that are displayed on a horizontal display and move left and right when the mouse clicks and drags them
+
+-Images move from right to left by their own in a looped cycle and as the user scrolls down they scroll faster to the right and scrolling back up makes them scroll to the left. When scrolling has stopped they keep moving but way slower
+
+-Selection of static cards that link the user to different things
+
+-Image that moves around when scrolled over and moves in the opposite direction that the mouse hovers towards. The image is hidden behind a "window" oval shape so only part of the image is shown but more is revealed when it moves around.
+
+-Round button with text around the whole shape that rotates in a clockwise motion slowly and when hovered over it spins faster for a second. The arrow in the center is always static in one direction but changes once hovered over
+
+-Images move up or down slightly and hide the rest of the image when scrolling up or down the page
+
+-Top nav menu and display grows in size and images appear to grow into existance when the page first loads and then stay static. A sign up to our newsletter image comes up and the page blurs out into the background
+
+-When a section is hovered over it creates a circle shape that the mouse pointer transforms into and links the user to more content/ another page.
+
+-When scrolling past a section it stops the scrolling and the text stays but the images keep moving up as the scrillong is continued. Eventually it moves past the area and keeps scrolling down
+
+-Top menu nav elements change colour when hovered over and also do an animation where the text appears to flick up and be replaced by other text in a different color
+
+
+
+
+Nav 
+-Top menu nav elements change colour when hovered over and also do an animation where the text appears to flick up and be replaced by other text in a different color
+
+-Top nav menu and display grows in size and images appear to grow into existance when the page first loads and then stay static. A sign up to our newsletter image comes up and the page blurs out into the background
+
+-Menu gets bigger vertically as I scrolled down the page and gets thinner as I scroll back towards it
