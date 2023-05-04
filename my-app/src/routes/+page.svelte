@@ -4,8 +4,6 @@
   import { blank_object,} from "svelte/internal";
 
 </script>
-
-MAIN PAGE
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
   <a href="/main">Home</a>
@@ -43,4 +41,3 @@ MAIN PAGE
 <footer>
 
 </footer>
-
