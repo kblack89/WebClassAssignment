@@ -4,77 +4,14 @@
   import { blank_object,} from "svelte/internal";
 
 </script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: black;
-}
-
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: white;
-  color: black;
-}
-footer {
-  background-color: #779;
-  padding: 100px;
-  text-align: center;
-  color: white;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 10%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-
-.topcontent {
-  flex: 70%;
-  background-color: #777;
-  padding: 80px;
-  text-align: center;
-  color: white;
-}
-.fakeimg {
-  background-color: #aaa;
-  width: 100px;
-  padding: 20px;
-}
-
-</style>
-</head>
-<body>
-
+MAIN PAGE
+<link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
-  <a href="#page.svelte">Home</a>
+  <a href="/main">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
-  <a href="#about.svelte">About</a>
+  <a href="/about">About</a>
 </div>
 <div class="row">
 <div class="side">
@@ -106,5 +43,4 @@ footer {
 <footer>
 
 </footer>
-</body>
-</html>
+

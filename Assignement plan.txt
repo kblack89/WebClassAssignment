@@ -1,0 +1,13 @@
+Weeks:
+
+1-Basic layout and content
+2-Basic layout and content/Adding modern elements
+3-Adding modern elements
+4-Adding modern elements
+5-Adding modern elements/Javascript
+6-Javascript
+7-Javascript/Svelte modules and tidy up
+8-Svelte modules and tidy up
+
+28 hours a week (224 hours to complete assignment)
+15 commits a day minimum (105 a week)

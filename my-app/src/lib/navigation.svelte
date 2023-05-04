@@ -7,5 +7,12 @@
 
     </ul>
 
-
 </nav>
+
+<script>
+    console.log("hello from component")
+</script>
+
+<style>
+
+</style>

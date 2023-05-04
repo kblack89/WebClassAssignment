@@ -1,12 +1,9 @@
 <script>
-  import Navigation from '$lib/navigation.svelte';  
+  import '../../main.css'
 </script>
 
-
-<Navigation />
+I come before
 
 <slot />
 
-<footer>
-    <Navigation />
-</footer>
+I come after
