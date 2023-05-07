@@ -14,7 +14,7 @@
 </div>
 
 <div class="sectionone">
-  <h2>MAIN PAGE</h2>
+  <h1>MAIN PAGE</h1>
   <h5>Title description, Dec 7, 2017</h5>
  
   <p>Some text..</p>

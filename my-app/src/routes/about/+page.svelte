@@ -14,17 +14,17 @@
 </div>
 
 <div class="sectionone">
-  <h1>ABOUT PAGE</h1>
-  <h5>Title description, Dec 7, 2017</h5>
- 
-  <p>Some text..</p>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  <br>
-  <h2>TITLE HEADING</h2>
-  <h5>Title description, Sep 2, 2017</h5>
-  <div class="fakeimg" style="height:200px;">Image</div>
-  <p>Some text..</p>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <h2 class = "TitlePt1">KYLE BLACK</h2>
+  <h4 class = "TitlePt2">A GUIDE TO EPICNESS</h4>
+  <h5 class = "TitlePt3">Title description, Dec 7, 2017</h5>
+ <div class = "sectiontwo">
+<div class="titleimage"></div>  
+<p>Some text..</p>
+ </div>
+
+  
+
+
 </div>
 
 
