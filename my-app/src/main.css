@@ -2,9 +2,10 @@ body {
   background-image: url("/images/purple galaxy.jpg");
   background-size: cover;
   background-position:center ;
-    margin: 0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
+
 }
 
 .topnav {
@@ -33,28 +34,15 @@ footer {
   color: white;
 }
 
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
- 
-}
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 10%;
-  background-color: #f1f1f1;
-  padding: 20px;
-  height:800px;
-}
 
 
-.topcontent {
+
+.sectionone {
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
-
+  font-size: 50PX;
   height: 4000px;
 }
 .fakeimg {
