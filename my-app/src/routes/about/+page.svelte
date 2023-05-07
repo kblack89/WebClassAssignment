@@ -15,17 +15,34 @@
 
 <div class="sectionone">
   <h2 class = "TitlePt1">KYLE BLACK</h2>
-  <h4 class = "TitlePt2">A GUIDE TO EPICNESS</h4>
-  <h5 class = "TitlePt3">Title description, Dec 7, 2017</h5>
+  <h4 class = "TitlePt2">A GUIDE TO EPICNESS!</h4>
+  <div class="titleimage"></div> 
+  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
+  <p>Let's start the show..</p>
+  </div>
+
  <div class = "sectiontwo">
-<div class="titleimage"></div>  
-<p>Some text..</p>
- </div>
+<p>Let's start the show..</p>
+</div> 
 
+<div class = "sectionthree">
   
-
-
 </div>
+<div class = "sectionfour">
+  
+</div>
+<div class = "sectionfive">
+  
+</div>
+<div class = "sectionsix">
+  
+</div>
+<div class = "sectionseven">
+  
+</div>
+
+
+
 
 
 <footer>
