@@ -27,7 +27,7 @@ body {
   color: black;
 }
 footer {
-  background-color: #779;
+  background-color: rgb(0, 0, 0);
   padding: 80px;
   height: 20px;
   text-align: center;
@@ -54,78 +54,89 @@ margin-top: -180px;
 
 
 .sectionone {
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
-  height: 400px;
+  height: 600px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .sectiontwo {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 5px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .sectionthree {
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .sectionfour{
-  background-color: rgb(217, 255, 0);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .sectionfive {
-  background-color: rgb(60, 255, 0);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .sectionsix {
-  background-color: rgb(0, 225, 255);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .sectionseven{
-  background-color: rgb(119, 0, 255);
+  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50PX;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-
-
-
-
 
 .titleimage {
   background-image: url("/images/jokerme.png");
@@ -136,6 +147,5 @@ margin-top: -180px;
   display: grid;
   place-items: center;
   margin:0 auto;
-  margin-top: -250px;
-
+  margin-top: -380px;
 }
