@@ -7,19 +7,17 @@
 
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
-  <a href="/main">Main</a>
+  <a href="/">Main</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="/about">About</a>
 </div>
 
 <div class="sectionone">
-  <h2 class = "TitlePt1">KYLE BLACK</h2>
-  <h4 class = "TitlePt2">A GUIDE TO EPICNESS!</h4>
-  <div class="titleimage"></div> 
-  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
-  <p>Let's start the show..</p>
+  <h2 class = "TitlePt1">ABOUT</h2>
+  <h4 class = "TitlePt2">A DEEPER LOOK INTO MY INTERESTS</h4>
   </div>
+  <div class="titleimage"></div> 
 
  <div class = "sectiontwo">
   <br>

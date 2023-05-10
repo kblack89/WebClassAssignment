@@ -7,25 +7,76 @@
 
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
-  <a href="/main">Main</a>
+  <a href="/">Main</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="/about">About</a>
 </div>
 
 <div class="sectionone">
-  <h1>MAIN PAGE</h1>
-  <h5>Title description, Dec 7, 2017</h5>
- 
-  <p>Some text..</p>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <h2 class = "TitlePt1">KYLE BLACK</h2>
+  <h5 class = "TitlePt2">A GUIDE TO EPICNESS!</h5>
+  <div class="titleimage"></div> 
+  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
+
+  </div>
+
+ <div class = "sectiontwo">
   <br>
-  <h2>TITLE HEADING</h2>
-  <h5>Title description, Sep 2, 2017</h5>
-  <div class="fakeimg" style="height:200px;">Image</div>
-  <p>Some text..</p>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display an image gallery that moves right when scrolled up and left when scrolled right</h2>
+  <p>Content will be images from my room</p>
+</div> 
+
+<div class = "sectionthree">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
+  <p>Content will be a selection of games I</p>
 </div>
+
+<div class = "sectionfour">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display a few images with big text beside them that moves into view when the section is scrolled </h2>
+  <p>Content will be images showing movies I like</p>
+</div>
+
+<div class = "sectionfive">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display a repeating video or gif with text beside</h2>
+  <p>Content will be shows that I like</p>
+</div>
+
+<div class = "sectionsix">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display an image gallery that expands each image and blurs out the rest when hovered over</h2>
+  <p>Content will be horror, fantasy and sci-fi art</p>
+</div>
+
+<div class = "sectionseven">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display text around an image that moves slowly a small amount of pixels in the opposite direction the mouse moves when hovered over it</h2>
+  <p>Content will be an image of me</p>
+</div>
+
+
+
 
 
 <footer>
