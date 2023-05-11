@@ -53,7 +53,7 @@ margin-top: -180px;
 
 
 
-.sectionone {
+.title-section {
   background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
@@ -64,55 +64,7 @@ margin-top: -180px;
   margin-left: 100px;
   margin-right: 100px;
 }
-.sectiontwo {
-  background-color: rgba(0, 0, 0, 0.445);
-  flex: 70%;
-  padding: 80px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 50PX;
-  height: 800px;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.sectionthree {
-  background-color: rgba(0, 0, 0, 0.445);
-  flex: 70%;
-  padding: 80px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 50PX;
-  height: 800px;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.sectionfour{
-  background-color: rgba(0, 0, 0, 0.445);
-  flex: 70%;
-  padding: 80px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 50PX;
-  height: 800px;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.sectionfive {
-  background-color: rgba(0, 0, 0, 0.445);
-  flex: 70%;
-  padding: 80px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 50PX;
-  height: 800px;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.sectionsix {
+.general-section{
   background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
@@ -125,18 +77,6 @@ margin-top: -180px;
   margin-right: 100px;
 }
 
-.sectionseven{
-  background-color: rgba(0, 0, 0, 0.445);
-  flex: 70%;
-  padding: 80px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 50PX;
-  height: 800px;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
 
 .titleimage {
   background-image: url("/images/jokerme.png");
@@ -148,4 +88,9 @@ margin-top: -180px;
   place-items: center;
   margin:0 auto;
   margin-top: -380px;
+}
+
+.gallery-image
+{
+
 }

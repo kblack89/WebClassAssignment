@@ -6,7 +6,7 @@
   <a href="/about">About</a>
 </div>
 
-<div class="sectionone">
+<div class="title-section ">
   <h2 class = "TitlePt1">KYLE BLACK</h2>
   <h5 class = "TitlePt2">A GUIDE TO EPICNESS!</h5>
   <div class="titleimage"></div> 
@@ -14,43 +14,43 @@
 
   </div>
 
- <div class = "sectiontwo">
+ <div class = "general-section">
   <br>
   <br>
   <br>
   <br>
   <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/arcade.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/books.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/chalkboard.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/tardis.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/controller.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/desk-trooper.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/headphones.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/keyboard.jpg"/>
  <img 
- class ="gallery-image-1"
+ class ="gallery-image"
  src="images/pc.jpg"/>
 
 </div> 
 
-<div class = "sectionthree">
+<div class = "general-section">
   <br>
   <br>
   <br>
@@ -59,7 +59,7 @@
   <p>Content will be a selection of games I</p>
 </div>
 
-<div class = "sectionfour">
+<div class = "general-section">
   <br>
   <br>
   <br>
@@ -68,7 +68,7 @@
   <p>Content will be images showing movies I like</p>
 </div>
 
-<div class = "sectionfive">
+<div class = "general-section">
   <br>
   <br>
   <br>
@@ -77,7 +77,7 @@
   <p>Content will be shows that I like</p>
 </div>
 
-<div class = "sectionsix">
+<div class = "general-section">
   <br>
   <br>
   <br>
@@ -86,7 +86,7 @@
   <p>Content will be horror, fantasy and sci-fi art</p>
 </div>
 
-<div class = "sectionseven">
+<div class = "general-section">
   <br>
   <br>
   <br>
