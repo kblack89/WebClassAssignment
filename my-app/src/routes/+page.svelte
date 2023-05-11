@@ -1,10 +1,3 @@
-<script>
-
-  import { redirect,} from "@sveltejs/kit";
-  import { blank_object,} from "svelte/internal";
-
-</script>
-
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
   <a href="/">Main</a>
@@ -26,8 +19,35 @@
   <br>
   <br>
   <br>
-  <h2 >This section will display an image gallery that moves right when scrolled up and left when scrolled right</h2>
-  <p>Content will be images from my room</p>
+  <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
+ <img 
+ class ="gallery-image-1"
+ src="images/arcade.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/books.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/chalkboard.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/tardis.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/controller.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/desk-trooper.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/headphones.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/keyboard.jpg"/>
+ <img 
+ class ="gallery-image-1"
+ src="images/pc.jpg"/>
+
 </div> 
 
 <div class = "sectionthree">

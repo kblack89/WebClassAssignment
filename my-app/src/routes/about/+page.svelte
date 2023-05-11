@@ -1,10 +1,3 @@
-<script>
-
-  import { redirect,} from "@sveltejs/kit";
-  import { blank_object,} from "svelte/internal";
-
-</script>
-
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
   <a href="/">Main</a>
