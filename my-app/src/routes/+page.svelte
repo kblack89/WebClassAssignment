@@ -15,39 +15,20 @@
   </div>
 
  <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
+<h1>Start</h1>
   <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
- <img 
- class ="gallery-image"
- src="images/arcade.jpg"/>
- <img 
- class ="gallery-image"
- src="images/books.jpg"/>
- <img 
- class ="gallery-image"
- src="images/chalkboard.jpg"/>
- <img 
- class ="gallery-image"
- src="images/tardis.jpg"/>
- <img 
- class ="gallery-image"
- src="images/controller.jpg"/>
- <img 
- class ="gallery-image"
- src="images/desk-trooper.jpg"/>
- <img 
- class ="gallery-image"
- src="images/headphones.jpg"/>
- <img 
- class ="gallery-image"
- src="images/keyboard.jpg"/>
- <img 
- class ="gallery-image"
- src="images/pc.jpg"/>
+ 
+  <script>
 
+  import { GalleryTop } from '$lib/GallerySlideshow.svelte';
+
+
+   export let GalleryTop; 
+  </script>
+  
+  <GalleryTop />
+
+  <h1>End</h1>
 </div> 
 
 <div class = "general-section">
