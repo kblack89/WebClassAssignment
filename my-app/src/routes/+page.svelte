@@ -1,3 +1,7 @@
+<script>
+  import  GalleryTop  from '$lib/GallerySlideshow.svelte';
+  </script>
+
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
   <a href="/">Main</a>
@@ -17,17 +21,7 @@
  <div class = "general-section">
 <h1>Start</h1>
   <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
- 
-  <script>
-
-  import { GalleryTop } from '$lib/GallerySlideshow.svelte';
-
-
-   export let GalleryTop; 
-  </script>
-  
-  <GalleryTop />
-
+   <GalleryTop />
   <h1>End</h1>
 </div> 
 
@@ -83,3 +77,4 @@
 <footer>
 
 </footer>
+

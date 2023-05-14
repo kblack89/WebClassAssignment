@@ -1,35 +1,42 @@
+
+<style>
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+</style>
+
+<div class="slideshow-container">
+  <!-- Slides -->
+  <div class="mySlides">
+    <img src="/images/pc.jpg" alt="A pc" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="/images/keyboard.jpg" alt="A keyboard" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="/images/pc.jpg" alt="Same pc again" style="width:100%">
+  </div>
+</div>
+
 <script>
- export const GalleryTop = null; 
-  </script>
-  
-<div>
-    <GalleryTop>
-    <img 
-     class ="gallery-image"
-     src="images/arcade.jpg"alt="First"/>
-     <img 
-     class ="gallery-image"
-     src="images/books.jpg"alt="Second"/>
-     <img 
-     class ="gallery-image"
-     src="images/chalkboard.jpg"alt="Third"/>
-     <img 
-     class ="gallery-image"
-     src="images/tardis.jpg"alt="Fourth"/>
-     <img 
-     class ="gallery-image"
-     src="images/controller.jpg"alt="Fifth"/>
-     <img 
-     class ="gallery-image"
-     src="images/desk-trooper.jpg"alt="Sixth"/>
-     <img 
-     class ="gallery-image"
-     src="images/headphones.jpg"alt="Seventh"/>
-     <img 
-     class ="gallery-image"
-     src="images/keyboard.jpg"alt="Eighth"/>
-     <img 
-     class ="gallery-image"
-     src="images/pc.jpg"alt="Ninth"/>
-    </GalleryTop>
-    </div>
+  var slides = document.querySelectorAll('.slideshow-container img');
+  var currentSlideIndex = 0;
+
+  function showNextSlide() {
+    slides[currentSlideIndex].classList.remove('slide-in');
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    slides[currentSlideIndex].classList.add('slide-in');
+  }
+
+  setInterval(showNextSlide, 2000);
+</script>
