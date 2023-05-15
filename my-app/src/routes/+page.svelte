@@ -1,6 +1,5 @@
 <script>
   import  GalleryTop  from '$lib/GallerySlideshow.svelte';
-
   
   </script>
 
