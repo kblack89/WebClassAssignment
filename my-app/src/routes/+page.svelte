@@ -1,5 +1,7 @@
 <script>
   import  GalleryTop  from '$lib/GallerySlideshow.svelte';
+
+  
   </script>
 
 <link rel="stylesheet" href="\src\main.css">
@@ -18,13 +20,12 @@
 
   </div>
 
+  <div class="scroll-container">
  <div class = "general-section">
-
   <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
    <GalleryTop />
-
 </div> 
-
+</div>
 <div class = "general-section">
   <br>
   <br>
