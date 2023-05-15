@@ -1,42 +1,26 @@
+<script>
+  // Images array with src and alt information
+  let images = [
+      { src: "/images/pc.jpg", alt: "Image 1 - Description of the image" },
+      { src: "/images/keyboard.jpg", alt: "Image 2 - Description of the image" },
+      { src: "/images/pc.jpg", alt: "Image 3 - Description of the image" }
+  ];
+</script>
 
-<style>
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-</style>
-
-<div class="slideshow-container">
-  <!-- Slides -->
-  <div class="mySlides">
-    <img src="/images/pc.jpg" alt="A pc" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="/images/keyboard.jpg" alt="A keyboard" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="/images/pc.jpg" alt="Same pc again" style="width:100%">
-  </div>
+<div class="gallery">
+  {#each images as image}
+      <img src={image.src} alt={image.alt}>
+  {/each}
 </div>
 
-<script>
-  var slides = document.querySelectorAll('.slideshow-container img');
-  var currentSlideIndex = 0;
-
-  function showNextSlide() {
-    slides[currentSlideIndex].classList.remove('slide-in');
-    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    slides[currentSlideIndex].classList.add('slide-in');
+<style>
+  .gallery {
+      display: flex;
+      justify-content: space-between;
   }
 
-  setInterval(showNextSlide, 2000);
-</script>
+  .gallery img {
+      width: 30%;
+      height: auto;
+  }
+</style>
