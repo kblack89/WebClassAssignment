@@ -1,5 +1,5 @@
 <script>
-  import  GalleryTop  from '$lib/GallerySlideshow.svelte';
+  import  GalleryTop  from '$lib/gallery-slideshow.svelte';
   
   </script>
 
@@ -26,10 +26,6 @@
 </div> 
 </div>
 <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
   <h2 >This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
   <p>Content will be a selection of games I</p>
 </div>
