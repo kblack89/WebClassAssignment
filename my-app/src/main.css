@@ -15,15 +15,14 @@ body {
 
 .topnav a {
   float: left;
-  color: white;
-  text-align: center;
+  color: coral;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: white;
+  background-color:  coral;
   color: black;
 }
 footer {
@@ -31,23 +30,26 @@ footer {
   padding: 80px;
   height: 20px;
   text-align: center;
-  color: white;
+  color: coral;
 }
 
 .TitlePt1
 {
 margin-right: 1200px;
+color:coral;
 }
 
 .TitlePt2
 {
 margin-right: 1200px;
+color:coral;
 }
 
 .TitlePt3
 {
 margin-left: 1000px;
 margin-top: -180px;
+color:coral;
 }
 
 
@@ -69,7 +71,7 @@ margin-top: -180px;
   flex: 70%;
   padding: 80px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color:coral;
   font-size: 50PX;
   height: 800px;
   margin-top: 1px;
