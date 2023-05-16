@@ -1,5 +1,8 @@
 <script>
+// @ts-nocheck
+
   import  GalleryTop  from '$lib/gallery-slideshow.svelte';
+  import  CardFlip  from '$lib/card-flip.svelte';
   
   </script>
 
@@ -19,15 +22,17 @@
 
   </div>
 
-  <div class="scroll-container">
+
  <div class = "general-section">
   <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
    <GalleryTop />
 </div> 
-</div>
+
+
 <div class = "general-section">
-  <h2 >This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
-  <p>Content will be a selection of games I</p>
+   <!--This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
+  Content will be a selection of games I</p>-->
+  <CardFlip />
 </div>
 
 <div class = "general-section">
