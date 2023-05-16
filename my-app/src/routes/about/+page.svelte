@@ -1,8 +1,3 @@
-<script>
-  import  GalleryTop  from '$lib/GallerySlideshow.svelte';
-  
-  </script>
-
 <link rel="stylesheet" href="\src\main.css">
 <div class="topnav">
   <a href="/">Main</a>
@@ -11,21 +6,22 @@
   <a href="/about">About</a>
 </div>
 
-<div class="title-section ">
-  <h2 class = "TitlePt1">KYLE BLACK</h2>
-  <h5 class = "TitlePt2">A GUIDE TO EPICNESS!</h5>
-  <div class="titleimage"></div> 
-  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
-
+<div class="sectionone">
+  <h2 class = "TitlePt1">ABOUT</h2>
+  <h4 class = "TitlePt2">A DEEPER LOOK INTO MY INTERESTS</h4>
   </div>
+  <div class="titleimage"></div> 
 
-  <div class="scroll-container">
- <div class = "general-section">
-  <!--This section will display an image gallery that moves right when scrolled up and left when scrolled right.Content will be images from my room-->
-   <GalleryTop />
+ <div class = "sectiontwo">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >This section will display an image gallery that moves right when scrolled up and left when scrolled right</h2>
+  <p>Content will be images from my room</p>
 </div> 
-</div>
-<div class = "general-section">
+
+<div class = "sectionthree">
   <br>
   <br>
   <br>
@@ -34,7 +30,7 @@
   <p>Content will be a selection of games I</p>
 </div>
 
-<div class = "general-section">
+<div class = "sectionfour">
   <br>
   <br>
   <br>
@@ -43,7 +39,7 @@
   <p>Content will be images showing movies I like</p>
 </div>
 
-<div class = "general-section">
+<div class = "sectionfive">
   <br>
   <br>
   <br>
@@ -52,7 +48,7 @@
   <p>Content will be shows that I like</p>
 </div>
 
-<div class = "general-section">
+<div class = "sectionsix">
   <br>
   <br>
   <br>
@@ -61,7 +57,7 @@
   <p>Content will be horror, fantasy and sci-fi art</p>
 </div>
 
-<div class = "general-section">
+<div class = "sectionseven">
   <br>
   <br>
   <br>
@@ -77,4 +73,3 @@
 <footer>
 
 </footer>
-
