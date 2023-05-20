@@ -1,20 +1,18 @@
 <div class="flipping-card-container">
-    <!-- Repeat the flipping card component 36 times -->
-    {#each Array.from({ length: 36 }) as _, index}
-      <div class="flipping-card">
-        <div class="flipping-card-inner">
-          <div class="flipping-card-front">
-            <p class="title">Hi</p>
-            <p>Hover over</p>
-          </div>
-          <div class="flipping-card-back">
-            <p class="title">Bye</p>
-            <p>See ya later!</p>
-          </div>
+  <!-- Repeat the flipping card component 18 times -->
+  {#each Array.from({ length: 18 }) as _, index}
+    <div class="flipping-card">
+      <div class="flipping-card-inner">
+        <div class="flipping-card-front">
+          <img src="/images/arcade.jpg" alt="Front Image">
+        </div>
+        <div class="flipping-card-back">
+          <img src="/images/tardis.jpg" alt="Back Image">
         </div>
       </div>
-    {/each}
-  </div>
+    </div>
+  {/each}
+</div>
   
   <style>
   .flipping-card-container {
@@ -28,13 +26,6 @@
     width: 200px;
     height: 260px;
     perspective: 1000px;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
   }
   
   .flipping-card-inner {
@@ -55,14 +46,21 @@
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 1px solid coral;
     border-radius: 1rem;
+  }
+  
+  .flipping-card-front img,
+  .flipping-card-back img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
   }
   
   .flipping-card-front {
@@ -83,7 +81,6 @@
       bisque 40%,
       rgb(255, 185, 160) 78%
     );
-    color: white;
     transform: rotateY(180deg);
   }
   </style>
