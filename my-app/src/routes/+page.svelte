@@ -3,6 +3,8 @@
 
   import  GalleryTop  from '$lib/gallery-slideshow.svelte';
   import  CardFlip  from '$lib/card-flip.svelte';
+  import ComeIntoViewDiv from '../lib/come-into-view.svelte';
+  import ComeIntoView from '../lib/come-into-view.svelte';
   
   </script>
 
@@ -32,16 +34,15 @@
 <div class = "general-section">
    <!--This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
   Content will be a selection of games I</p>-->
+  
   <CardFlip />
 </div>
 
 <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
-  <h2 >This section will display a few images with big text beside them that moves into view when the section is scrolled </h2>
-  <p>Content will be images showing movies I like</p>
+
+  <ComeIntoView />
+ <!--This section will display a few images with big text beside them that moves into view when the section is scrolled </h2>
+  <p>Content will be images showing movies I like</p>-->
 </div>
 
 <div class = "general-section">
@@ -49,8 +50,8 @@
   <br>
   <br>
   <br>
-  <h2 >This section will display a repeating video or gif with text beside</h2>
-  <p>Content will be shows that I like</p>
+  <!--This section will display a repeating video or gif with text beside</h2>
+  <p>Content will be shows that I like-->
 </div>
 
 <div class = "general-section">
