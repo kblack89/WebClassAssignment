@@ -1,4 +1,20 @@
-<div class="container">
+<script>
+    import { onMount } from 'svelte';
+  
+    let isImageVisible = false;
+  
+    onMount(() => {
+      window.addEventListener('scroll', showImage);
+    });
+  
+    function showImage() {
+      if (!isImageVisible && window.scrollY >= 2400) {
+        isImageVisible = true;
+      }
+    }
+  </script>
+  
+  <div class="container">
     {#if isImageVisible}
       <img class="image visible" src="images/tardis.jpg" alt="Your Image" />
     {:else}
@@ -41,11 +57,13 @@
       max-width: 80%;
       height: auto;
       transition: opacity 0.3s ease, transform 0.5s ease;
+    
     }
   
     .image.visible {
       opacity: 1;
       transform: translateY(0);
+      
     }
   </style>
   
