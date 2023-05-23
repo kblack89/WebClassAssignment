@@ -13,6 +13,9 @@
 margin-right: 1200px;
 color:coral;
 animation: glow 2s ease-in-out infinite alternate;
+transform: translate(0, 10vh);
+  transition: all 1s;
+ 
 }
 
 .TitlePt2
@@ -20,6 +23,9 @@ animation: glow 2s ease-in-out infinite alternate;
 margin-right: 1200px;
 color:coral;
 animation: glow 2s ease-in-out infinite alternate;
+transform: translate(0, 10vh);
+  transition: all 1s;
+
 }
 
 .TitlePt3
@@ -28,6 +34,10 @@ margin-left: 1000px;
 margin-top: -180px;
 color:coral;
 animation: glow 2s ease-in-out infinite alternate;
+transform: translate(0, 10vh);
+  transition: all 1s;
+
+  
 }
 
 
