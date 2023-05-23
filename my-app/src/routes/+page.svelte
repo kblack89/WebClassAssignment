@@ -3,8 +3,9 @@
 
   import  GalleryTop  from '$lib/gallery-slideshow.svelte';
   import  CardFlip  from '$lib/card-flip.svelte';
-  import ComeIntoViewDiv from '../lib/come-into-view.svelte';
+ 
   import ComeIntoView from '../lib/come-into-view.svelte';
+  import RandomPokemon from '$lib/poke-api.svelte';
   
   </script>
 
@@ -46,12 +47,9 @@
 </div>
 
 <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
-  <!--This section will display a repeating video or gif with text beside</h2>
-  <p>Content will be shows that I like-->
+<RandomPokemon />
+  <!--This section will display api data to show a random api when the button is clicked</h2>
+  <p>Content will be an image from the poki api-->
 </div>
 
 <div class = "general-section">
