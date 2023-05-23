@@ -12,14 +12,14 @@
 {
 margin-right: 1200px;
 color:coral;
-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
 }
 
 .TitlePt2
 {
 margin-right: 1200px;
 color:coral;
-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
 }
 
 .TitlePt3
@@ -27,7 +27,7 @@ animation: glow 1s ease-in-out infinite alternate;
 margin-left: 1000px;
 margin-top: -180px;
 color:coral;
-
+animation: glow 2s ease-in-out infinite alternate;
 }
 
 
@@ -57,5 +57,13 @@ color:coral;
   margin:0 auto;
   margin-top: -380px;
 }
-
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.158), 0 0 10px rgba(255, 255, 255, 0), 0 0 15px #ff7c029d, 0 0 20x #ff7c028a, 0 0 25px #ff7c024d, 0 0 30px #ff7c0254, 0 0 35px #ff7c0260;
+  }
+  
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.13), 0 0 10px #fca24e00, 0 0 15px #fca24e8f, 0 0 20px #fca24e7c, 0 0 25px #fca24e5b, 0 0 30px #fca24e4f, 0 0 35px #fca24e5b;
+  }
+}
 </style>
