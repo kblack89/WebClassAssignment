@@ -3,7 +3,7 @@
 
   import  GalleryTop  from '$lib/gallery-slideshow.svelte';
   import  CardFlip  from '$lib/card-flip.svelte';
- 
+ import TopDisp from '$lib/top-content-disp.svelte';
   import ComeIntoView from '../lib/come-into-view.svelte';
   import RandomPokemon from '$lib/poke-api.svelte';
   
@@ -18,11 +18,7 @@
 </div>
 
 <div class="title-section ">
-  <h2 class = "TitlePt1">KYLE BLACK</h2>
-  <h5 class = "TitlePt2">A GUIDE TO EPICNESS!</h5>
-  <div class="titleimage"></div> 
-  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
-
+<TopDisp />
   </div>
 
 
