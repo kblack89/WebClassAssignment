@@ -36,9 +36,7 @@ color:coral;
 animation: glow 2s ease-in-out infinite alternate;
 transform: translate(0, 10vh);
   transition: all 1s;
-
-  
-}
+  }
 
 
 
@@ -53,6 +51,7 @@ transform: translate(0, 10vh);
   height: 600px;
   margin-left: 100px;
   margin-right: 100px;
+  animation: fadeIn 5s;  
 }
 
 
@@ -66,6 +65,12 @@ transform: translate(0, 10vh);
   place-items: center;
   margin:0 auto;
   margin-top: -380px;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 @-webkit-keyframes glow {
   from {
