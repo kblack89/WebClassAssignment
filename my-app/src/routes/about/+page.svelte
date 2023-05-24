@@ -1,9 +1,10 @@
+<script>
+    import NavDisp from  '$lib/navigation.svelte';
+</script>
+
 <link rel="stylesheet" href="\src\main.css">
-<div class="topnav">
-  <a href="/">Main</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="/about">About</a>
+<div>
+<NavDisp />
 </div>
 
 <div class="sectionone">

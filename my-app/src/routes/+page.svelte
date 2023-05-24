@@ -6,15 +6,16 @@
  import TopDisp from '$lib/top-content-disp.svelte';
   import ComeIntoView from '../lib/come-into-view.svelte';
   import RandomPokemon from '$lib/poke-api.svelte';
+  import NavDisp from  '$lib/navigation.svelte';
+
   
   </script>
 
+
+
 <link rel="stylesheet" href="\src\main.css">
-<div class="topnav">
-  <a href="/">Main</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="/about">About</a>
+<div>
+<NavDisp />
 </div>
 
 <div class="title-section ">

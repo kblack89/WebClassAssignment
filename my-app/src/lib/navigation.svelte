@@ -1,11 +1,8 @@
 <nav>
-    <ul>
-
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-
-    </ul>
-
-
+    <div class="topnav">
+        <button onclick="window.location.href = '/';">Main </button>
+        <button onclick="window.location.href = '/about';">About </button>
+    </div>
 </nav>
+
+
