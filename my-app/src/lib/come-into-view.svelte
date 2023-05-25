@@ -12,6 +12,7 @@
         isImageVisible = true;
       }
     }
+
   </script>
   
   <div class="container">
@@ -30,6 +31,7 @@
       position: relative;
       display: inline-block;
       overflow: hidden;
+   
     }
   
     .content {
@@ -49,6 +51,7 @@
     .container:hover .content {
       opacity: 1;
       transform: translateY(0);
+      
     }
   
     .image {
@@ -63,7 +66,12 @@
     .image.visible {
       opacity: 1;
       transform: translateY(0);
+      animation: fadeIn 5s;  
       
     }
+    @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
   </style>
   

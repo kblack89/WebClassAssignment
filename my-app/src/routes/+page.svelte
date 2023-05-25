@@ -6,15 +6,17 @@
  import TopDisp from '$lib/top-content-disp.svelte';
   import ComeIntoView from '../lib/come-into-view.svelte';
   import RandomPokemon from '$lib/poke-api.svelte';
+  import NavDisp from  '$lib/navigation.svelte';
+  import CardExpand from  '$lib/card-expand.svelte';
+
   
   </script>
 
+
+
 <link rel="stylesheet" href="\src\main.css">
-<div class="topnav">
-  <a href="/">Main</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="/about">About</a>
+<div>
+<NavDisp />
 </div>
 
 <div class="title-section ">
@@ -49,12 +51,9 @@
 </div>
 
 <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
-  <h2 >This section will display an image gallery that expands each image and blurs out the rest when hovered over</h2>
-  <p>Content will be horror, fantasy and sci-fi art</p>
+<CardExpand />
+ <!--This section will display an image gallery that expands each image and blurs out the rest when hovered over</h2>
+  <p>Content will be horror, fantasy and sci-fi art-->
 </div>
 
 <div class = "general-section">
