@@ -8,6 +8,7 @@
   import RandomPokemon from '$lib/poke-api.svelte';
   import NavDisp from  '$lib/navigation.svelte';
   import CardExpand from  '$lib/card-expand.svelte';
+  import FollowMouse from '$lib/follow-mouse-div.svelte';
 
   
   </script>
@@ -57,12 +58,9 @@
 </div>
 
 <div class = "general-section">
-  <br>
-  <br>
-  <br>
-  <br>
-  <h2 >This section will display text around an image that moves slowly a small amount of pixels in the opposite direction the mouse moves when hovered over it</h2>
-  <p>Content will be an image of me</p>
+ <FollowMouse />
+  <!--This section will display text around an image that moves slowly a small amount of pixels in the opposite direction the mouse moves when hovered over it.
+  Content will be an image of me-->
 </div>
 
 

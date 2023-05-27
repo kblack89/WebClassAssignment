@@ -17,9 +17,9 @@
   
   <div class="container">
     {#if isImageVisible}
-      <img class="image visible" src="images/tardis.jpg" alt="Your Image" />
+      <img class="image visible" src="images/tardis.jpg" alt="A cool thing" />
     {:else}
-      <img class="image" src="images/tardis.jpg" alt="Your Image" />
+      <img class="image" src="images/tardis.jpg" alt="Another cool thing" />
     {/if}
     <div class="content">
       <p>This is the text that becomes visible on hover.</p>

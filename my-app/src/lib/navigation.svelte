@@ -22,24 +22,7 @@
         transform: translateY(0);
       }
     }
-  .nav-button {
-      /* Your existing button styles */
-      position: relative;
-      padding: 10px 20px;
-      border-radius: 7px;
-      border: 1px solid rgb(61, 106, 255);
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 2px;
-      background: transparent;
-      color: #fff;
-      overflow: hidden;
-      box-shadow: 0 0 0 0 transparent;
-      -webkit-transition: all 2.2s ease-in;
-      -moz-transition: all 2.2s ease-in;
-      transition: all 2.2s ease-in;
-    }
+
 
 
     button {

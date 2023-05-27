@@ -72,7 +72,7 @@ transform: translate(0, 10vh);
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.158), 0 0 10px rgba(255, 255, 255, 0), 0 0 15px #ff7c029d, 0 0 20x #ff7c028a, 0 0 25px #ff7c024d, 0 0 30px #ff7c0254, 0 0 35px #ff7c0260;
   }
