@@ -1,63 +1,67 @@
-<div id="card-container">
-    <div class="card">
-      <img src="images/tardis.jpg" alt="Image 1">
-    </div>
-    <div class="card">
-      <img src="images/tardis.jpg" alt="Image 2">
-    </div>
-    <div class="card">
-      <img src="images/tardis.jpg" alt="Image 3">
-    </div>
-    <!-- Repeat the above card structure for the remaining cards -->
-  </div>
-
-  <style>
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.card img {
-  width: 10%;
-  height: 10%;
-  object-fit: cover;
-}
-
-.card:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-
-.card:hover ~ .card {
-  filter: blur(4px);
-}
-  </style>
-
-  <script>
-
-const cards = document.querySelectorAll('.card');
-
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    cards.forEach(c => {
-      if (c !== card) {
-        c.classList.add('blur');
-      }
-    });
-  });
-
-  card.addEventListener('mouseleave', () => {
-    cards.forEach(c => {
-      c.classList.remove('blur');
-    });
-  });
-});
+<script>
+    let images = [
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg",
+      "/images/headphones.jpg"
+    ];
+  
+    let hoveredImage = null;
+  
+    function handleHover(image) {
+      hoveredImage = image;
+    }
+  
+    function handleLeave() {
+      hoveredImage = null;
+    }
   </script>
+  
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: 400ms ease 100ms;
+      -moz-transition: 400ms ease 100ms;
+      transition: 400ms ease 100ms;
+    }
+  
+    .gallery:hover img:not(:hover) {
+      filter: blur(3px);
+    }
+  
+    .gallery img:hover {
+      transform: scale(1.25);
+      filter: none;
+    }
+  
+    .gallery img.hovered {
+      filter: blur(3px);
+      opacity: 0.7;
+    }
+  </style>
+  
+  <div class="gallery">
+    {#each images as image}
+      <img src={image} alt="Image" 
+        on:mouseenter={() => handleHover(image)}
+        on:mouseleave={handleLeave}
+        class:hovered={hoveredImage !== null && hoveredImage !== image}
+      />
+    {/each}
+  </div>
+  
