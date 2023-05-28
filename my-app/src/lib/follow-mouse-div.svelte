@@ -1,32 +1,31 @@
-<div>
-  <div class = bottomimage></div>  
+<div id="follow">
+  <img src="/images/jokerme.png" alt="me as joker">
 </div>
 
 <style>
-.bottomimage{
+#follow {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#follow img {
+  transform: translate(0, 0);
   
-  background-image: url("/images/jokerme.png");
-  height: 320px;
-  width: 500px;
-  padding: 5px;
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-  margin-top: 230px;
-  transition: transform 0.3s ease-out;
 }
 
-.bottomimage:hover{
-    transform: rotateX(-15deg) translateY(-10px);
+#follow:hover img {
+  transform: translate(calc(-50% + var(--mouse-x)), calc(-50% + var(--mouse-y)));
 }
-
-
-
 </style>
+
 <script>
-
-
-
-
-    
+document.addEventListener('mousemove', (e) => {
+  const follow = document.getElementById('follow');
+  if (follow) {
+    follow.style.setProperty('--mouse-x', e.clientX + 'px');
+    follow.style.setProperty('--mouse-y', e.clientY + 'px');
+  }
+});
 </script>
