@@ -15,26 +15,31 @@
  
   <div class="pokeBack">
     <img src={pokemonImage} alt=" ">
-    <button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button>
-</div>
+    
+<div><button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button></div>
+  </div>
   
   <style>
 
     img {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20px;
+      width: 300px;
+      height: 300px;
+      margin-bottom: -550px;
+      margin-left: 10px;
     }
   
     button {
       padding: 10px 20px;
       font-size: 16px;
+  margin-top: 600px;
+      margin-left: 10px;
+
     }
     .pokeBack{
       background-image: url("/images/pokegrass.jpg");
-      height: 900px;
+      height: 600px;
       width: 900px;
-      margin-top: -60px;
+      margin-top: -40px;
       margin-left: 400px;
 
     }
