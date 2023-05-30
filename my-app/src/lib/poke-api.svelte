@@ -12,22 +12,14 @@
     }
   </script>
   
-  <main>
-    <h1>Random Pokémon Image</h1>
-    <img src={pokemonImage} alt="Random Pokemon">
-    <button on:click={fetchRandomPokemon}>Fetch Random Pokémon</button>
-  </main>
+ 
+  <div class="pokeBack">
+    <img src={pokemonImage} alt=" ">
+    <button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button>
+</div>
   
   <style>
-    main {
-      text-align: center;
-      padding: 20px;
-    }
-  
-    h1 {
-      margin-bottom: 20px;
-    }
-  
+
     img {
       width: 200px;
       height: 200px;
@@ -38,6 +30,13 @@
       padding: 10px 20px;
       font-size: 16px;
     }
+    .pokeBack{
+      background-image: url("/images/pokegrass.jpg");
+      height: 900px;
+      width: 900px;
+      margin-top: -60px;
+      margin-left: 400px;
+
+    }
+
   </style>
-   <!--I will take this opacity code and make a find a pokemon div. you press the buitton to generate random pokemon and hover over them to make them visible-->
-  
