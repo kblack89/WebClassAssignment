@@ -27,19 +27,22 @@
   #follow{
     margin:auto;
     position: relative;
-    width:600px;
+    width:300px;
     overflow:hidden;
-    height:600px;
+    height:400px;
     border-radius: 100%;
+    background-color: black;
   }
 
-  .imageHolder{
-    pointer-events: none;
-    position: absolute;
-  }
+  .imageHolder {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 25%; /* Adjust this value to move the image more to the left */
+  transform: translate(-20%, -5%);
+}
   .imageHolder img{
 
-   
     width:600px;
 
     height:400px;
