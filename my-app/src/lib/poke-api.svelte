@@ -14,7 +14,7 @@
   
   <main>
     <h1>Random Pokémon Image</h1>
-    <img src={pokemonImage} alt="Pokemon Image">
+    <img src={pokemonImage} alt="Random Pokemon">
     <button on:click={fetchRandomPokemon}>Fetch Random Pokémon</button>
   </main>
   

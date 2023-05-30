@@ -41,23 +41,25 @@
     }
   
     .gallery:hover img:not(:hover) {
-      filter: blur(3px);
+      filter: blur(5px);
     }
   
     .gallery img:hover {
-      transform: scale(1.25);
+      transform: scale(1.30);
       filter: none;
+      z-index:10;
     }
   
     .gallery img.hovered {
       filter: blur(3px);
       opacity: 0.7;
+     
     }
   </style>
   
   <div class="gallery">
     {#each images as image}
-      <img src={image} alt="Image" 
+      <img src={image} alt="Really cool stuff" 
         on:mouseenter={() => handleHover(image)}
         on:mouseleave={handleLeave}
         class:hovered={hoveredImage !== null && hoveredImage !== image}

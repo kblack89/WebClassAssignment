@@ -4,10 +4,10 @@
     <div class="flipping-card">
       <div class="flipping-card-inner">
         <div class="flipping-card-front">
-          <img src="/images/arcade.jpg" alt="Front Image">
+          <img src="/images/arcade.jpg" alt="Arcade machine">
         </div>
         <div class="flipping-card-back">
-          <img src="/images/tardis.jpg" alt="Back Image">
+          <img src="/images/tardis.jpg" alt="The doctors ship">
         </div>
       </div>
     </div>
