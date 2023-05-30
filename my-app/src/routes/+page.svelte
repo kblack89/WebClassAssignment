@@ -34,8 +34,7 @@
 <div class = "general-section">
    <!--This section will display an collection of cards that will animate and flip over when clicked then show link </h2>
   Content will be a selection of games I</p>-->
-  
-  <CardFlip />
+    <CardFlip />
 </div>
 
 <div class = "general-section">
@@ -47,8 +46,7 @@
 
 <div class = "general-section">
 <RandomPokemon />
-  <!--This section will display api data to show a random api when the button is clicked</h2>
-  <p>Content will be an image from the poki api-->
+  <!--This section will display api data to show a random api when the button is clicked.m it will display a different background depending on the pokemon type-->
 </div>
 
 <div class = "general-section">
