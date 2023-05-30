@@ -8,7 +8,7 @@
     });
   
     function showImage() {
-      if (!isImageVisible && window.scrollY >= 2400) {
+      if (!isImageVisible && window.scrollY >= 2300) {
         isImageVisible = true;
       }
     }
@@ -18,40 +18,19 @@
   <div class="container">
     {#if isImageVisible}
       <img class="image visible" src="images/tardis.jpg" alt="A cool thing" />
+      <p class="text visible">This is the text that becomes visible on hover.</p>
     {:else}
       <img class="image" src="images/tardis.jpg" alt="Another cool thing" />
+      <p class="text">This is the text that becomes visible on hover.</p>
     {/if}
-    <div class="content">
-      <p>This is the text that becomes visible on hover.</p>
-    </div>
   </div>
-    
+  
   <style>
     .container {
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-   
-    }
-  
-    .content {
-      opacity: 0;
-      transform: translateY(100%);
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 0.5rem;
-      background-color: #f5f5f5;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      z-index: 1;
-      transition: opacity 0.3s ease, transform 0.5s ease;
-    }
-  
-    .container:hover .content {
-      opacity: 1;
-      transform: translateY(0);
-      
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+      height: 100%; /* Adjust the container height to center vertically */
     }
   
     .image {
@@ -60,18 +39,29 @@
       max-width: 80%;
       height: auto;
       transition: opacity 0.3s ease, transform 0.5s ease;
-    
     }
   
     .image.visible {
       opacity: 1;
       transform: translateY(0);
-      animation: fadeIn 5s;  
-      
+      animation: fadeIn 3s;
     }
+  
+    .text {
+      opacity: 0;
+      max-width: 80%;
+      height: auto;
+      transition: opacity 0.3s ease, transform 0.5s ease;
+    }
+  
+    .text.visible {
+      opacity: 1;
+      animation: fadeIn 3s;
+    }
+  
     @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
   </style>
   
