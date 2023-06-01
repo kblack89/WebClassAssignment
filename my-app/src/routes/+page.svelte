@@ -9,6 +9,7 @@
   import NavDisp from  '$lib/navigation.svelte';
   import CardExpand from  '$lib/card-expand.svelte';
   import FollowMouse from '$lib/follow-mouse-div.svelte';
+  import TestGrid from '$lib/test-grid.svelte';
 
   
   </script>
@@ -38,8 +39,8 @@
 </div>
 
 <div class = "general-section">
+<TestGrid />
 
-  <ComeIntoView />
  <!--This section will display a few images with big text beside them that moves into view when the section is scrolled </h2>
   <p>Content will be images showing movies I like</p>-->
 </div>
