@@ -11,7 +11,7 @@
 .TitlePt1
 {
 margin-right: 1200px;
-color:coral;
+color:rgb(245, 112, 24);
 animation: glow 2s ease-in-out infinite alternate;
 transform: translate(0, 10vh);
   transition: all 1s;
@@ -21,7 +21,7 @@ transform: translate(0, 10vh);
 .TitlePt2
 {
 margin-right: 1200px;
-color:coral;
+color:rgb(245, 112, 24);
 animation: glow 2s ease-in-out infinite alternate;
 transform: translate(0, 10vh);
   transition: all 1s;
@@ -32,7 +32,7 @@ transform: translate(0, 10vh);
 {
 margin-left: 1000px;
 margin-top: -180px;
-color:coral;
+color:rgb(245, 112, 24);
 animation: glow 2s ease-in-out infinite alternate;
 transform: translate(0, 10vh);
   transition: all 1s;

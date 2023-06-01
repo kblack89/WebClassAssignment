@@ -64,12 +64,12 @@
     
     .flipping-card:hover .flipping-card-inner {
       transform: rotateY(180deg);
-      box-shadow: 0 0 10px 5px coral;
+      box-shadow: 0 0 100px 30px rgb(255, 74, 2);
     }
     
     .flipping-card-front,
     .flipping-card-back {
-      box-shadow: 0 0px 24px 5px rgb(248, 159, 87);
+      box-shadow: 0 0px 24px 5px rgb(245, 112, 24);
       position: absolute;
       display: flex;
       justify-content: center;
@@ -78,7 +78,7 @@
       height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      border: 1px solid coral;
+      border: 1px solid rgb(245, 112, 24);
       border-radius: 1rem;
     }
     

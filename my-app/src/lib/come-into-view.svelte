@@ -72,6 +72,7 @@
     text-align: center;
     transition: opacity 2s ease;
     align-self: start;
+    color:rgb(245, 112, 24);
   }
 
   .visible {
@@ -87,5 +88,6 @@
 
   .title.visible {
     opacity: 1;
+    color:rgb(245, 112, 24);
   }
 </style>
