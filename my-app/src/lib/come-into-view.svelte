@@ -1,126 +1,91 @@
 <script>
-    import { onMount } from 'svelte';
-  
-    let isImageVisible = false;
-  
-    onMount(() => {
-      window.addEventListener('scroll', showImage);
-    });
-  
-    function showImage() {
-      if (!isImageVisible && window.scrollY >= 2300) {
-        isImageVisible = true;
-      }
+  import { onMount } from 'svelte';
+
+  let images = [
+    "/images/pc.jpg",
+    "/images/pc.jpg",
+    "/images/pc.jpg",
+  ];
+
+  let texts = [
+    'Text 1',
+    'Text 2',
+    'Text 3'
+  ];
+
+  let isContentVisible = false;
+
+  function showContent() {
+    if (typeof window !== 'undefined' && !isContentVisible && window.pageYOffset >= 2300) {
+      isContentVisible = true;
     }
-
-  </script>
-  
-  <div class="container">
-    {#if isImageVisible}
-    <div class="grid-item">
-      <h1 class="text visible">MOVIES I LOVE</h1>
-      <p class="text visible">This is a good movie</p>
-    </div>
-    <div class="grid-item">
-      <img class="image visible" src="images/tardis.jpg" alt="A cool thing" />
-    </div>
-    <div class="grid-item">
-
-      <p class="text visible">This is a good movie</p>
-    </div>
-    <div class="grid-item">
-      <img class="image visible" src="images/tardis.jpg" alt="A cool thing" />
-    </div>
-    <div class="grid-item">
-      <p class="text visible">This is a good movie</p>
-    </div>
-    <div class="grid-item">
-      <img class="image visible" src="images/tardis.jpg" alt="A cool thing" />
-    </div>
-    <div class="grid-item">
-      <p class="text visible">This is a good movie</p>
-    </div>
-    {:else}
-    <div class="grid-item">
-      <img class="image" src="images/tardis.jpg" alt="Another cool thing" />
-    </div>
-    <div class="grid-item">
-      <h1 class="text">..the great space race</h1>
-    </div>
-    <div class="grid-item">
-      <img class="image" src="images/tardis.jpg" alt="Another cool thing" />
-    </div>
-    <div class="grid-item">
-      <p class="text">This is a good movie</p>
-    </div>
-    <div class="grid-item">
-      <img class="image" src="images/tardis.jpg" alt="Another cool thing" />
-    </div>
-    <div class="grid-item">
-      <p class="text">This is a good movie</p>
-    </div>
-    {/if}
-  </div>
-  
-  
-  <style>
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid-item {
-  text-align: center;
-}
-
-.image {
-  opacity: 0;
-  transform: translateY(100%);
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.3s ease, transform 0.5s ease;
-  padding: 80px;
-}
-
-.image.visible {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeIn 3s;
-}
-
-.text {
-  opacity: 0;
-  max-width: 80%;
-  height: auto;
-  transition: opacity 0.3s ease, transform 0.5s ease;
-}
-
-.text.visible {
-  opacity: 1;
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
   }
-  100% {
+
+  onMount(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', showContent);
+    }
+  });
+</script>
+
+<div class="container">
+  <h1 class="{`title ${isContentVisible ? 'visible' : ''}`}">MOVIES</h1>
+
+  {#each Array(2) as _} <!-- Create 2 empty grids -->
+    <div class="empty-div"></div>
+  {/each}
+
+  {#each texts as text}
+    <div class="{`text ${isContentVisible ? 'visible' : ''}`}">{text}</div>
+  {/each}
+
+  {#each images as image}
+    <img src={image} alt="" class="{`image ${isContentVisible ? 'visible' : ''}`}">
+  {/each}
+</div>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: auto 80px 80px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+  }
+
+  .empty-div {
+    height: 80px;
+  }
+
+  .image {
+    opacity: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 2s ease, transform 2s ease;
+    align-self: start;
+  }
+
+  .text {
+    opacity: 0;
+    text-align: center;
+    transition: opacity 2s ease;
+    align-self: start;
+  }
+
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .title {
+    font-size: 150px;
+    opacity: 0;
+    transition: opacity 2s ease; /* Added transition for title */
+  }
+
+  .title.visible {
     opacity: 1;
   }
-}
-
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
-}
-
-    
-  </style>
-  
+</style>
