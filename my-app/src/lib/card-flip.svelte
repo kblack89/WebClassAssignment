@@ -1,18 +1,43 @@
+<script>
+  const images = [
+    "/images/arcade.jpg",
+    "/images/books.jpg",
+    "/images/chalkboard.jpg",
+    "/images/controller.jpg",
+    "/images/desk-trooper.jpg",
+    "/images/headphones.jpg",
+    "/images/keyboard.jpg",
+    "/images/pc.jpg",
+    "/images/tardis.jpg",
+    "/images/scifi.jpg",
+    "/images/skyhigh.jpg",
+    "/images/spooky.jpg",
+    "/images/troll.jpg",
+    "/images/wtf.jpg",
+    "/images/beakers.jpg",
+    "/images/lab.jpg",
+    "/images/tree.jpg",
+    "/images/rain.jpg",
+
+    // Add more image paths as needed
+  ];
+</script>
+
 <div class="flipping-card-container">
-  <!-- Repeat the flipping card component 18 times -->
-  {#each Array.from({ length: 18 }) as _, index}
+  {#each images as image, index}
     <div class="flipping-card">
       <div class="flipping-card-inner">
         <div class="flipping-card-front">
-          <img src="/images/arcade.jpg" alt="Arcade machine">
+          <img src={image} alt="Image {index + 1}">
         </div>
         <div class="flipping-card-back">
-          <img src="/images/tardis.jpg" alt="The doctors ship">
+          <a href="https://example.com" target="_blank">Link to Website {index + 1}</a>
         </div>
       </div>
     </div>
   {/each}
 </div>
+
   
 <style>
     .flipping-card-container {
