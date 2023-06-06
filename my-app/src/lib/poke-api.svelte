@@ -14,11 +14,13 @@
 
 <div class="grid-container">
   <div class="pokeBack">
-    <img src={pokemonImage} alt=" ">
+    <div class="pokeImage">
+      <img src={pokemonImage} alt=" ">
+    </div>
   </div>
   <div class="pokeData">
-    <p>gesrggsg</p>
-    <p>grgegege</p>
+    <p>Name:</p>
+    <p>Type:</p>
   </div>
 
   <div><button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button></div>
@@ -39,8 +41,16 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     padding-right: 10px;
+  }
+
+  .pokeImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
   }
 
   img {
@@ -51,7 +61,7 @@
   .pokeData {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     padding-left: 10px;
   }
@@ -60,5 +70,11 @@
     padding: 10px 20px;
     font-size: 16px;
     grid-column: span 2;
+  }
+
+  p {
+    margin-top: 0;
+    text-align: right;
+    margin-right: 10px;
   }
 </style>
