@@ -9,7 +9,7 @@
   import NavDisp from  '$lib/navigation.svelte';
   import CardExpand from  '$lib/card-expand.svelte';
   import FollowMouse from '$lib/follow-mouse-div.svelte';
-  import FooterYo from '$lib/footer.svelte';
+
   import Footer from '$lib/footer.svelte';
 
 
