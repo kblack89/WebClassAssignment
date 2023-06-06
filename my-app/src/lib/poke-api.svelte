@@ -1,5 +1,7 @@
 <script>
   let pokemonImage = '';
+  let pokemonName = '';
+  let pokemonType = '';
 
   async function fetchRandomPokemon() {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
@@ -9,6 +11,12 @@
     const pokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`);
     const pokemonData = await pokemonResponse.json();
     pokemonImage = pokemonData.sprites.front_default;
+    pokemonName = capitalizeFirstLetter(pokemonData.name);
+    pokemonType = capitalizeFirstLetter(pokemonData.types[0].type.name);
+  }
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 </script>
 
@@ -19,8 +27,8 @@
     </div>
   </div>
   <div class="pokeData">
-    <p>Name:</p>
-    <p>Type:</p>
+    <p class="name">Name: {pokemonName}</p>
+    <p class="type">Type: {pokemonType}</p>
   </div>
 
   <div><button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button></div>
@@ -50,7 +58,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
+    margin-bottom: 20px; /* Adjust the margin-bottom value as desired */
   }
 
   img {
@@ -63,9 +71,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 10px;
+    padding-left: 40px;
+    margin-right: 10px; /* Add this line to move the p tags to the right by 10px */
   }
-
   button {
     padding: 10px 20px;
     font-size: 16px;
