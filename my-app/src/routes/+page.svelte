@@ -10,6 +10,9 @@
   import CardExpand from  '$lib/card-expand.svelte';
   import FollowMouse from '$lib/follow-mouse-div.svelte';
 
+  import Footer from '$lib/footer.svelte';
+
+
   
   </script>
 
@@ -38,8 +41,8 @@
 </div>
 
 <div class = "general-section">
+<ComeIntoView />
 
-  <ComeIntoView />
  <!--This section will display a few images with big text beside them that moves into view when the section is scrolled </h2>
   <p>Content will be images showing movies I like</p>-->
 </div>
@@ -61,11 +64,6 @@
   Content will be an image of me-->
 </div>
 
+<Footer />
 
-
-
-
-<footer>
-
-</footer>
 

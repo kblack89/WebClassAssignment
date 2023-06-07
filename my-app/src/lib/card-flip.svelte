@@ -1,18 +1,43 @@
+<script>
+  const images = [
+    "/images/arcade.jpg",
+    "/images/books.jpg",
+    "/images/chalkboard.jpg",
+    "/images/controller.jpg",
+    "/images/desk-trooper.jpg",
+    "/images/headphones.jpg",
+    "/images/keyboard.jpg",
+    "/images/pc.jpg",
+    "/images/tardis.jpg",
+    "/images/scifi.jpg",
+    "/images/skyhigh.jpg",
+    "/images/spooky.jpg",
+    "/images/troll.jpg",
+    "/images/wtf.jpg",
+    "/images/beakers.jpg",
+    "/images/lab.jpg",
+    "/images/tree.jpg",
+    "/images/rain.jpg",
+
+    // Add more image paths as needed
+  ];
+</script>
+
 <div class="flipping-card-container">
-  <!-- Repeat the flipping card component 18 times -->
-  {#each Array.from({ length: 18 }) as _, index}
+  {#each images as image, index}
     <div class="flipping-card">
       <div class="flipping-card-inner">
         <div class="flipping-card-front">
-          <img src="/images/arcade.jpg" alt="Arcade machine">
+          <img src={image} alt="Image {index + 1}">
         </div>
         <div class="flipping-card-back">
-          <img src="/images/tardis.jpg" alt="The doctors ship">
+          <a href="https://example.com" target="_blank">Link to Website {index + 1}</a>
         </div>
       </div>
     </div>
   {/each}
 </div>
+
   
 <style>
     .flipping-card-container {
@@ -39,12 +64,12 @@
     
     .flipping-card:hover .flipping-card-inner {
       transform: rotateY(180deg);
-      box-shadow: 0 0 10px 5px coral;
+      box-shadow: 0 0 100px 30px rgb(255, 74, 2);
     }
     
     .flipping-card-front,
     .flipping-card-back {
-      box-shadow: 0 0px 24px 5px rgb(248, 159, 87);
+      box-shadow: 0 0px 24px 5px rgb(245, 112, 24);
       position: absolute;
       display: flex;
       justify-content: center;
@@ -53,7 +78,7 @@
       height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      border: 1px solid coral;
+      border: 1px solid rgb(245, 112, 24);
       border-radius: 1rem;
     }
     
