@@ -82,7 +82,8 @@
       border-radius: 1rem;
     }
     
-    .flipping-card-front img,
+    .flipping-card-front img, 
+    
     .flipping-card-back img {
       max-width: 100%;
       max-height: 100%;

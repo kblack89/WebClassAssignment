@@ -2,14 +2,14 @@
 // @ts-nocheck
 
   let images = [
-    { src: "/images/pc.jpg", alt: "Image 1 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 2 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 1 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 2 - Description of the image" },
     { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/pc.jpg", alt: "Image 5 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" },
     { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/pc.jpg", alt: "Image 5 - Description of the image" }
+    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" }
   ];
 
   let scrollPosition = 0;
