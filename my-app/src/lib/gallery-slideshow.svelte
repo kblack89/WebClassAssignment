@@ -2,15 +2,14 @@
 // @ts-nocheck
 
   let images = [
-    { src: "/images/pc.jpg", alt: "Image 1 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 2 - Description of the image" },
-    { src: "/images/pc.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/pc.jpg", alt: "Image 5 - Description of the image" },
-
-    { src: "/images/pc.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/keyboard.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/pc.jpg", alt: "Image 5 - Description of the image" }
+    { src: "/images/blue galaxy.jpg", alt: "Image 1 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 2 - Description of the image" },
+    { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" },
+    { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" }
   ];
 
   let scrollPosition = 0;
@@ -65,10 +64,15 @@
     position: absolute;
     left: 0;
   }
+  .gallery img {
+    object-fit: cover;
+  width: 100%;
+  height: 10%;
+  }
 
   .image-wrapper {
     flex-shrink: 0;
-    width: 50%;
+    width: 40%;
     
   }
 

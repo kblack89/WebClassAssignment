@@ -1,17 +1,17 @@
 <script>
     let images = [
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg",
-      "/images/headphones.jpg"
+      "/images/purple galaxy.jpg",
+      "/images/rain.jpg",
+      "/images/troll.jpg",
+      "/images/bigmouth.jpg",
+      "/images/mist.jpg",
+      "/images/octo.jpg",
+      "/images/ritual.jpg",
+      "/images/skulleyes.jpg",
+      "/images/skullmoon.jpg",
+      "/images/snakewold.jpg",
+      "/images/noms.jpg",
+      "/images/town.jpg"
     ];
   
     let hoveredImage = null;
@@ -33,7 +33,7 @@
     }
   
     .gallery img {
-      width: 100%;
+      width: 90%;
       height: auto;
       -webkit-transition: 400ms ease 100ms;
       -moz-transition: 400ms ease 100ms;
@@ -45,7 +45,7 @@
     }
   
     .gallery img:hover {
-      transform: scale(1.30);
+      transform: scale(1.80);
       filter: none;
       z-index:10;
     }
