@@ -2,15 +2,15 @@
   import { onMount } from 'svelte';
 
   let images = [
-    "/images/pc.jpg",
-    "/images/pc.jpg",
-    "/images/pc.jpg",
+    "/images/lotr.jpg",
+    "/images/spiderman.jpg",
+    "/images/jp.jpg",
   ];
 
   let texts = [
-    'Text 1',
-    'Text 2',
-    'Text 3'
+    'Lord Of The Rings',
+    'Spider-man',
+    'Jurassic Park'
   ];
 
   let isContentVisible = false;
