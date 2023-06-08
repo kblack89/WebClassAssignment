@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+  // @ts-nocheck
 
   let images = [
     { src: "/images/blue galaxy.jpg", alt: "Image 1 - Description of the image" },
@@ -16,8 +16,7 @@
   export let el;
 
   function getOffset(el) {
-    if(el)
-    {
+    if(el) {
       const rect = el.getBoundingClientRect();
       return {
         left: rect.left + window.scrollX,
@@ -25,27 +24,9 @@
       };
     }
   }
-
-  
-
-  /**
-     * @param {{ deltaY: any; detail: any; wheelDelta: number; }} event
-     */
-  /*function handleScroll(event) {
-    console.log(event)
-
-    const deltaY = event.deltaY || event.detail || (-event.wheelDelta);
-
-    if (deltaY > 0) {
-      scrollPosition += 80; // Adjust the value as per your preference
-    } else if (deltaY < 0) {
-      scrollPosition -= 80; // Adjust the value as per your preference
-    }
-  }*/
-    
 </script>
 
-<div class="gallery" bind:this={el}>
+<div class="gallery fade-in" bind:this={el}>
   {#each images as image, index}
     <div class="image-wrapper" style="animation-delay: {index * 1.5}s; transform: translateX({getOffset(el)?.top - scrollPosition < 0 ? getOffset(el)?.top - scrollPosition : 0}px)">
       <img src={image.src} alt={image.alt}>
@@ -54,7 +35,7 @@
 </div>
 
 <style>
-.gallery {
+  .gallery {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -63,19 +44,33 @@
     transition: transform 0.9s ease-in-out;
     position: absolute;
     left: 0;
+    opacity: 0;
   }
-  
+
+  .fade-in {
+    animation: fade-in 3s forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .gallery img {
     object-fit: cover;
     width: 100%;
     height: auto;
   }
-  
+
   .image-wrapper {
     flex-shrink: 0;
     width: 40%;
   }
-  
+
   .image-wrapper img {
     width: 100%;
     height: 400px; /* Set a fixed height value for all images */
