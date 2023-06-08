@@ -1,5 +1,7 @@
 <script>
     import NavDisp from  '$lib/navigation.svelte';
+    import Footer from '$lib/footer.svelte';
+    import Animation from '$lib/animation-disp.svelte';
 </script>
 
 <link rel="stylesheet" href="\src\main.css">
@@ -8,10 +10,11 @@
 </div>
 
 <div class="sectionone">
-  <h2 class = "TitlePt1">ABOUT</h2>
-  <h4 class = "TitlePt2">A DEEPER LOOK INTO MY INTERESTS</h4>
+
+  <Animation />
   </div>
-  <div class="titleimage"></div> 
+ 
+
 
  <div class = "sectiontwo">
   <br>
@@ -71,6 +74,6 @@
 
 
 
-<footer>
 
-</footer>
+
+  <Footer />

@@ -5,8 +5,8 @@
     { src: "/images/blue galaxy.jpg", alt: "Image 1 - Description of the image" },
     { src: "/images/lab.jpg", alt: "Image 2 - Description of the image" },
     { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 4 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 5 - Description of the image" },
     { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
     { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
     { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" }
@@ -54,7 +54,7 @@
 </div>
 
 <style>
-  .gallery {
+.gallery {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -64,24 +64,22 @@
     position: absolute;
     left: 0;
   }
+  
   .gallery img {
     object-fit: cover;
-  width: 100%;
-  height: 10%;
+    width: 100%;
+    height: auto;
   }
-
+  
   .image-wrapper {
     flex-shrink: 0;
     width: 40%;
-    
   }
-
+  
   .image-wrapper img {
     width: 100%;
-    height: auto;
-    margin: 0;
-
-
+    height: 400px; /* Set a fixed height value for all images */
+    object-fit: cover;
   }
 </style>
 

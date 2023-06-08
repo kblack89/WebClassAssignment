@@ -7,21 +7,29 @@
 
 <style>
 
-
 .topnav {
-      display: flex;
-      justify-content: center;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: slideIn 1.0s ease-out forwards;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s forwards;
+  transition: opacity 1.5s;
+  background-color: #000000;
+  padding: 10px;
+  z-index: 1000;
+}
 
-    @keyframes slideIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 
