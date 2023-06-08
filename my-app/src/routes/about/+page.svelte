@@ -1,5 +1,6 @@
 <script>
     import NavDisp from  '$lib/navigation.svelte';
+    import Footer from '$lib/footer.svelte';
 </script>
 
 <link rel="stylesheet" href="\src\main.css">
@@ -71,6 +72,6 @@
 
 
 
-<footer>
 
-</footer>
+
+  <Footer />
