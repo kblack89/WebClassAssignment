@@ -9,12 +9,17 @@
 
 
 .topnav {
-      display: flex;
-      justify-content: center;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: slideIn 1.0s ease-out forwards;
-    }
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #000000;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
 
     @keyframes slideIn {
       to {
