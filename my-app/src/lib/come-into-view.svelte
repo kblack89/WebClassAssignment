@@ -16,7 +16,7 @@
   let isContentVisible = false;
 
   function showContent() {
-    if (typeof window !== 'undefined' && !isContentVisible && window.pageYOffset >= 2300) {
+    if (typeof window !== 'undefined' && !isContentVisible && window.pageYOffset >= 2200) {
       isContentVisible = true;
     }
   }

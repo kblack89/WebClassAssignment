@@ -10,15 +10,17 @@ Done:
 -Images glow when hovered over
 -Image that moves around when scrolled over and moves in the opposite direction that the mouse hovers towards. The image is hidden behind a "window" oval shape so only part of the image is shown but more is revealed when it moves around.
 -Top menu nav elements change colour when hovered over and also do an animation 
+-Make menu stick to the top of the page when scrolling up or down
+-Images move from right to left as the user scrolls up or down
+-Selection of static cards that link the user to different things
+-Top nav menu and display grows in size and images appear to grow into existance when the page first loads and then stay static. 
 
 Mostly done:
--Images move from right to left by their own in a looped cycle and as the user scrolls down they scroll faster to the right and scrolling back up makes them scroll to the left. When scrolling has stopped they keep moving but way slower
--Selection of static cards that link the user to different things
--Top nav menu and display grows in size and images appear to grow into existance when the page first loads and then stay static. A sign up to our newsletter image comes up and the page blurs out into the background
+
+
 
 
 To do:
--Make menu stick to the top of the page when scrolling up or down
 -Buttons move from right to left by their own in a looped cycle
 -Menu gets bigger vertically as I scrolled down the page and gets thinner as I scroll back towards it
 -Images and text (elements on their own as cards)that are displayed on a horizontal display and move left and right when the mouse clicks and drags them
@@ -26,3 +28,4 @@ To do:
 -Images move up or down slightly and hide the rest of the image when scrolling up or down the page
 -When scrolling past a section it stops the scrolling and the text stays but the images keep moving up as the scrolling is continued. Eventually it moves past the area and keeps scrolling down
 -When a section is hovered over it creates a circle shape that the mouse pointer transforms into and links the user to more content/ another page.
+-A sign up to our newsletter image comes up and the page blurs out into the background
