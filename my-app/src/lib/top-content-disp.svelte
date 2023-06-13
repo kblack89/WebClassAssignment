@@ -7,53 +7,40 @@
   </div>
   <style>
 
+.TitlePt1, .TitlePt2, .TitlePt3 {
+animation: glow 2s ease-in-out infinite alternate;
+transform: translate(0, 10vh);
+  transition: all 1s;
+}
 
 .TitlePt1
 {
 margin-right: 1200px;
-color:rgb(245, 112, 24);
-animation: glow 2s ease-in-out infinite alternate;
-transform: translate(0, 10vh);
-  transition: all 1s;
- 
-}
+ }
 
 .TitlePt2
 {
 margin-right: 1200px;
-color:rgb(245, 112, 24);
-animation: glow 2s ease-in-out infinite alternate;
-transform: translate(0, 10vh);
-  transition: all 1s;
-
 }
 
 .TitlePt3
 {
 margin-left: 1000px;
 margin-top: -180px;
-color:rgb(245, 112, 24);
-animation: glow 2s ease-in-out infinite alternate;
-transform: translate(0, 10vh);
-  transition: all 1s;
-  }
-
-
-
+}
 
 .title-section {
-  background-color: rgba(0, 0, 0, 0.445);
   flex: 70%;
   padding: 80px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 50PX;
   height: 600px;
   margin-left: 100px;
   margin-right: 100px;
   animation: fadeIn 5s;  
+  color:rgb(245, 112, 24);
 }
-
 
 .titleimage {
   background-image: url("/images/jokerme.png");
