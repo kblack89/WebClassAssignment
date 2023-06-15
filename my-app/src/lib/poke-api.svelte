@@ -1,7 +1,8 @@
 <script>
-  let pokemonImage = '';
+  let pokemonImage = null;
   let pokemonName = '';
   let pokemonType = '';
+  let showPokemon = false; // Initially set to false
 
   async function fetchRandomPokemon() {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
@@ -13,6 +14,7 @@
     pokemonImage = pokemonData.sprites.front_default;
     pokemonName = capitalizeFirstLetter(pokemonData.name);
     pokemonType = capitalizeFirstLetter(pokemonData.types[0].type.name);
+    showPokemon = true; // Set to true after fetching a random Pokémon
   }
 
   function capitalizeFirstLetter(string) {
@@ -22,8 +24,10 @@
 
 <div class="grid-container">
   <div class="pokeBack">
-    <div class="pokeImage">
-      <img src={pokemonImage} alt=" ">
+    <div class="pokeImage {showPokemon ? 'visible' : 'hidden'}"> <!-- Add dynamic class -->
+      {#if showPokemon}
+        <img src={pokemonImage} alt=" ">
+      {/if}
     </div>
   </div>
   <div class="pokeData">
@@ -62,9 +66,8 @@
   }
 
   img {
-    width: 300px;
-    height: 300px;
-  }
+    width: 40%;
+   }
 
   .pokeData {
     display: flex;
@@ -84,5 +87,13 @@
     margin-top: 0;
     text-align: right;
     margin-right: 10px;
+
+  }
+  .visible {
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
   }
 </style>

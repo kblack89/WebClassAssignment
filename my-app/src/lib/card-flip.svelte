@@ -28,7 +28,7 @@ onMount(() => {
   function handleScroll() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    isVisible = scrollPosition >= 1000;
+    isVisible = scrollPosition >= 1100;
   }
 
   window.addEventListener('scroll', handleScroll);

@@ -9,9 +9,7 @@
 
 .topnav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset:0 0 auto 0;
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -54,7 +52,7 @@ margin: 10px;
 }
 
 button:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(49, 27, 1);
   box-shadow: 0 0 10px 5px rgb(245, 112, 24);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
