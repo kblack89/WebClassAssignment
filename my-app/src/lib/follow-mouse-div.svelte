@@ -31,7 +31,7 @@
     overflow:hidden;
     height:400px;
     border-radius: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .imageHolder {
@@ -42,9 +42,7 @@
   transform: translate(-20%, -5%);
 }
   .imageHolder img{
-
     width:600px;
-
     height:400px;
    
   }

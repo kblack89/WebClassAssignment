@@ -25,6 +25,17 @@
     }
   </script>
   
+    <div class="gallery">
+      {#each images as image}
+        <img src={image} alt="Really cool stuff" 
+          on:mouseenter={() => handleHover(image)}
+          on:mouseleave={handleLeave}
+          class:hovered={hoveredImage !== null && hoveredImage !== image}
+        />
+      {/each}
+    </div>
+    
+  
   <style>
     .gallery {
       display: grid;
@@ -52,18 +63,8 @@
   
     .gallery img.hovered {
       filter: blur(3px);
-      opacity: 0.7;
+      opacity: 1.0;
      
     }
   </style>
-  
-  <div class="gallery">
-    {#each images as image}
-      <img src={image} alt="Really cool stuff" 
-        on:mouseenter={() => handleHover(image)}
-        on:mouseleave={handleLeave}
-        class:hovered={hoveredImage !== null && hoveredImage !== image}
-      />
-    {/each}
-  </div>
   

@@ -61,7 +61,7 @@
     opacity: 0;
     transform: translateY(100%);
     width: 100%;
-    height: 300px;
+    height: 350%;
     object-fit: cover;
     transition: opacity 2s ease, transform 2s ease;
     align-self: start;
@@ -88,6 +88,5 @@
 
   .title.visible {
     opacity: 1;
-    color:rgb(245, 112, 24);
   }
 </style>

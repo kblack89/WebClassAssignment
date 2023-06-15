@@ -72,13 +72,10 @@
   }
 
   .image-wrapper img {
-    width: 100%;
     height: 400px; /* Set a fixed height value for all images */
     object-fit: cover;
   }
-  h1 {
- color:rgb(245, 112, 24);
-  }
+
 </style>
 
 <svelte:window bind:scrollY={scrollPosition} />

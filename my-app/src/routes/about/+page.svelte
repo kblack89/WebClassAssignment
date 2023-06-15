@@ -16,7 +16,19 @@
  
 
 <div class = "general-section">
-   <h2 >About Me </h2>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<div class = "general-section">
+  <br>
+  <br>
+  <br>
+  <br>
+
 </div>
 
 

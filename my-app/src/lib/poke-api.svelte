@@ -66,9 +66,8 @@
   }
 
   img {
-    width: 300px;
-    height: 300px;
-  }
+    width: 40%;
+   }
 
   .pokeData {
     display: flex;
@@ -88,7 +87,7 @@
     margin-top: 0;
     text-align: right;
     margin-right: 10px;
-    color:rgb(245, 112, 24);
+
   }
   .visible {
     opacity: 1;

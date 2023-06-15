@@ -8,7 +8,6 @@
       <li><a href="/">About</a></li>
     </ul>
 </nav>
-
 </footer>
 
 <style>
@@ -17,24 +16,18 @@ footer {
     padding: 80px;
     height: 20px;
     text-align: center;
-
   }
 
   a {
-    color: rgb(245, 112, 24);
-    padding:30px;
+    padding:70px;
     text-decoration: none;   
   }
 
   a:hover {
-    color: rgb(245, 112, 24);
-    padding:30px;
     text-decoration:underline;  
   }
   li {
     display:inline;
- 
   }
-  
   
   </style>
