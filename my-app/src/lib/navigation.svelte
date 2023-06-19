@@ -6,7 +6,6 @@
 </nav>
 
 <style>
-
 .topnav {
   position: fixed;
   inset:0 0 auto 0;
@@ -28,10 +27,7 @@
   }
 }
 
-
-
-
-    button {
+.topnav button {
   position:relative;
   text-align: center;
   padding: 20px 60px;
@@ -48,7 +44,7 @@
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-margin: 10px;
+  margin: 10px;
 }
 
 button:hover {
@@ -105,6 +101,5 @@ button:active {
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
-
 
 </style>

@@ -7,7 +7,7 @@
   async function fetchRandomPokemon() {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
     const data = await response.json();
-    const pokemonCount = data.count;
+    const pokemonCount = 1000; //It did fetch but there was an issue and the documentation on the site was incorrect
     const randomPokemonId = Math.floor(Math.random() * pokemonCount) + 1;
     const pokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`);
     const pokemonData = await pokemonResponse.json();

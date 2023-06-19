@@ -8,20 +8,12 @@
   <style>
 
 .TitlePt1, .TitlePt2, .TitlePt3 {
-animation: glow 2s ease-in-out infinite alternate;
-transform: translate(0, 10vh);
+  animation: glow 2s ease-in-out infinite alternate;
+  transform: translate(0, 10vh);
   transition: all 1s;
 }
 
-.TitlePt1
-{
-margin-right: 1200px;
- }
-
-.TitlePt2
-{
-margin-right: 1200px;
-}
+.TitlePt1, .TitlePt2{ margin-right: 1200px; }
 
 .TitlePt3
 {

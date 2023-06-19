@@ -31,7 +31,7 @@
 <div class="container">
   <h1 class="{`title ${isContentVisible ? 'visible' : ''}`}">MOVIES</h1>
 
-  {#each Array(2) as _} <!-- Create 2 empty grids -->
+  {#each Array(2) as _} 
     <div class="empty-div"></div>
   {/each}
 

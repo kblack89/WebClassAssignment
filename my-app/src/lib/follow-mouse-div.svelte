@@ -33,7 +33,6 @@
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0);
   }
-
   .imageHolder {
   pointer-events: none;
   position: absolute;
@@ -44,9 +43,7 @@
   .imageHolder img{
     width:600px;
     height:400px;
-   
-  }
-
+     }
 
 </style>
 

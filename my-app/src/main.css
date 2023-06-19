@@ -19,5 +19,10 @@ body {
 
 h2, h1, a, p{
   color:rgb(245, 112, 24);
+  
+}
+
+p {
+  font-size: 30px;
 }
 
