@@ -2,7 +2,7 @@
   <h2 class = "TitlePt1">KYLE BLACK</h2>
   <h5 class = "TitlePt2">A GUIDE TO EPICNESS!</h5>
   <div class="titleimage"></div> 
-  <h5 class = "TitlePt3">The many Hobbies, Interests and Passsions I have.</h5>
+  <h5 class="TitlePt3">The many Hobbies, Interests and<br> Passions I have.</h5>
 
   </div>
   <style>
@@ -13,13 +13,20 @@
   transition: all 1s;
 }
 
-.TitlePt1, .TitlePt2{ margin-right: 1200px; }
-
-.TitlePt3
-{
-margin-left: 1000px;
-margin-top: -180px;
+.TitlePt1, .TitlePt2, .TitlePt3, .titleimage  { 
+  display:flex;
+  justify-content: flex-start;
 }
+
+.TitlePt3 {
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    word-wrap: break-word; /* or overflow-wrap: break-word; */
+  }
 
 .title-section {
   flex: 70%;
@@ -35,17 +42,17 @@ margin-top: -180px;
 }
 
 .titleimage {
-  background-image: url("/images/jokerme.png");
-  color: #aaa;
-  height:320px;
-  width:500px;
-  padding: 5px;
-  display: grid;
-  place-items: center;
-  margin:0 auto;
-  margin-top: -380px;
-}
-
+    background-image: url("/images/jokerme.png");
+    color: #aaa;
+    height: 320px;
+    width: 500px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 500px;
+    transform: translateY(-30%);
+  }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
