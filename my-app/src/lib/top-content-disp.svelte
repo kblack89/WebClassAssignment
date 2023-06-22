@@ -1,3 +1,5 @@
+ <!-- The html for the top content-->
+<div class="grid-container">
 <div class="title-section">
   <div class="grid-container">
     <div class="titles">
@@ -6,10 +8,13 @@
     </div>
     <div class="titleimage"></div>
     <h5 class="TitlePt3">The many Hobbies, Interests and<br> Passions I have.</h5>
-  </div>
+   </div>
+ </div>
 </div>
-  <style>
+<!-- end html section -->
 
+<style>
+ /* Styles to add the glowing and transitional effects over the text in this componant*/
 .TitlePt1, .TitlePt2, .TitlePt3 {
   animation: glow 2s ease-in-out infinite alternate;
   transform: translate(0, 10vh);
@@ -20,7 +25,6 @@
   display:flex;
   justify-content: flex-start;
 }
-
 
 .title-section {
   flex: 70%;
@@ -45,7 +49,7 @@
     align-items: center;
     position: relative;
     left: 50%;
-  transform: translateX(-50%) translateY(-30%);
+    transform: translateX(-50%) translateY(-30%);
   }
 
 @keyframes fadeIn {

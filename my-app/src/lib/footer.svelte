@@ -1,3 +1,4 @@
+<!-- Footer Html -->
 <footer>
   <nav>
     <ul>
@@ -8,8 +9,9 @@
     </ul>
 </nav>
 </footer>
-
+<!-- end html section -->
 <style>
+/* Styles for the footer display*/
 footer {
     background-color: rgb(15, 15, 15);
     padding: 80px;

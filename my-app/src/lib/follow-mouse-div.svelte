@@ -1,7 +1,6 @@
 <script>
-
+  //Script that deals with the mouse movement event
   let m = { x: 0, y: 0 };
-
   let top = 0;
   let left = 0;
 
@@ -15,15 +14,18 @@
   }
 
 </script>
+<!-- end script section -->
+
+<!-- Html for the image that moves with the mouse -->
 <div id="follow" on:mousemove={handleMousemove}>
   <div class ="imageHolder" style="top:{top}px;left:{left}px">
     <img src="/images/jokerme.png" alt="me as joker">
   </div>
 </div>
-
+<!-- end Html section -->
 
 <style>
-
+  /* Styles for the content display and transforming*/
   #follow{
     margin:auto;
     position: relative;
@@ -38,7 +40,7 @@
   pointer-events: none;
   position: absolute;
   top: 50%;
-  left: 25%; /* Adjust this value to move the image more to the left */
+  left: 25%; 
   transform: translate(-20%, -5%);
   margin-top: 0px;
 }

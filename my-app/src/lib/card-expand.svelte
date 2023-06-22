@@ -1,4 +1,5 @@
 <script>
+  //Script that makes an array of images and stores the currently hovered over image and deals with the events
   let images = [
     "/images/purple galaxy.jpg",
     "/images/rain.jpg",
@@ -24,7 +25,9 @@
     hoveredImage = null;
   }
 </script>
+<!-- end script section -->
 
+ <!--Html that loops through the images and links to hover effects in the script -->
 <div>
   <h2>Some spooky art to enjoy..</h2>
 </div>
@@ -36,8 +39,10 @@
         class:hovered={hoveredImage !== null && hoveredImage !== image}/>
     {/each}
 </div>
+<!-- end html section -->
 
 <style>
+    /* Styles for the gallery, gridifying where nesssecary and adding the blur effect when hovered over an image */
   .gallery {
     display: grid;
     grid-gap: 10px;

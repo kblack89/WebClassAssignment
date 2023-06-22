@@ -1,4 +1,5 @@
 <script>
+  //importing all the svelte componants
 // @ts-nocheck
   import GalleryTop  from '$lib/gallery-slideshow.svelte';
   import CardFlip  from '$lib/card-flip.svelte';
@@ -9,7 +10,9 @@
   import FollowMouse from '$lib/follow-mouse-div.svelte';
   import Footer from '$lib/footer.svelte';
 </script>
+<!-- end script section -->
 
+<!-- About page html -->
 <div class="title-section ">
   <TopDisp />
 </div>

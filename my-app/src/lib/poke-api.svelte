@@ -1,4 +1,5 @@
 <script>
+  //This script section fetches from the pokemon api and finds a random pokemon to display on button click and also pulls data from the api to find the name and type of that pokemon
   let pokemonImage = null;
   let pokemonName = '';
   let pokemonType = '';
@@ -21,7 +22,9 @@
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 </script>
+<!-- end script section -->
 
+  <!-- The html for the text, background image and pokemon image. Uses the Api references such as pokemonName to generate the correct data where referenced-->
 <div class="grid-container">
   <div class="pokeBack">
     <div class="pokeImage {showPokemon ? 'visible' : 'hidden'}"> <!-- Add dynamic class -->
@@ -34,11 +37,12 @@
     <p class="name">Name: {pokemonName}</p>
     <p class="type">Type: {pokemonType}</p>
   </div>
-
   <div><button on:click={fetchRandomPokemon}>Generate a Random Pokémon</button></div>
 </div>
+<!-- end html section -->
 
 <style>
+   /* Styles for the pokemon fetching componant. Just flex, grid and other css code to make the layout as desired*/
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,7 +68,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px; /* Adjust the margin-bottom value as desired */
+    margin-bottom: 20px; 
   }
 
   img {
@@ -77,7 +81,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 40px;
-    margin-right: 10px; /* Add this line to move the p tags to the right by 10px */
+    margin-right: 10px; 
   }
   button {
     padding: 10px 20px;

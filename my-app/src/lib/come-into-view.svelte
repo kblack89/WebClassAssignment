@@ -1,4 +1,5 @@
 <script>
+  //Script that deals with the transition and scroll for the images and text
   import { onMount } from 'svelte';
 
   let images = [
@@ -27,7 +28,9 @@
     }
   });
 </script>
+<!-- end script section -->
 
+<!-- Html for the content that goes through the array to display the content -->
 <div class="come-into-view-container">
   <h1 class="{`title ${isContentVisible ? 'visible' : ''}`}">MOVIES</h1>
   {#each Array(2) as _}
@@ -40,8 +43,10 @@
     <img src={image} alt="" class="{`image ${isContentVisible ? 'visible' : ''}`}">
   {/each}
 </div>
+<!-- end Html section -->
 
 <style>
+  /* Styles for the content transitions, etc*/
   .come-into-view-container {
     display: grid;
     grid-template-rows: auto 80px 80px 1fr;

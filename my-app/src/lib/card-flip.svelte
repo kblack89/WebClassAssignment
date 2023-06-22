@@ -1,4 +1,5 @@
 <script>
+  //Script that has an array of images and deals with scrolling to set off desired effects
   import { onMount } from "svelte";
     const images = [
       { path: "/images/Elden.jpg", link: "https://store.steampowered.com/app/1245620/ELDEN_RING/" },
@@ -33,6 +34,8 @@
   });
 
 </script>
+<!-- end script section -->
+<!-- Html for the card flip gallery -->
 <h1>A collection of epic games!!</h1>
   <div class="card-flip-container {`flipping-card-container ${isVisible ? 'visible' : ''}`}">
     {#each images as image, index}
@@ -50,8 +53,10 @@
   </div>
 <div class="come-into-view-container">
 </div>
+<!-- end html section -->
 
 <style>
+   /* Styles for the cards that create the flipping, glow and other effects seen*/
   .card-flip-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

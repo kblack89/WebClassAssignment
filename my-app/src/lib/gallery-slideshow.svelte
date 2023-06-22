@@ -1,6 +1,5 @@
 <script>
-  // @ts-nocheck
-
+    //Script that deals with the gallery images and movement event
   let images = [
     { src: "/images/blue galaxy.jpg", alt: "Image 1 - Description of the image" },
     { src: "/images/lab.jpg", alt: "Image 2 - Description of the image" },
@@ -31,6 +30,9 @@
     }
   }
 </script>
+ <!-- End of script section -->
+
+ <!-- The html for the gallery -->
 <h1>Space... Science... Art...</h1>
 <div class="gallery fade-in" bind:this={el}>
   {#each images as image, index}
@@ -39,14 +41,16 @@
     </div>
   {/each}
 </div>
+<!-- end html section -->
 
 <style>
+  /* Styles for the image gallery transitions and display*/
   .gallery {
     display: flex;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    scrollbar-width: none; /* Optional: To hide the scrollbar */
+    scrollbar-width: none; 
     transition: transform 0.9s ease-in-out;
     position: absolute;
     left: 0;
@@ -78,7 +82,7 @@
   }
 
   .image-wrapper img {
-    height: 400px; /* Set a fixed height value for all images */
+    height: 400px; 
     object-fit: cover;
   }
 

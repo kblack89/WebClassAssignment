@@ -1,11 +1,14 @@
+ <!-- The html for the top nav buttons-->
 <nav>
     <div class="topnav">
         <button onclick="window.location.href = '/';">Main </button>
         <button onclick="window.location.href = '/about';">About </button>
     </div>
 </nav>
+<!-- end html section -->
 
 <style>
+  /* Styles for the nav buttons that adds the visual effects for the buttons when hovered over, etc as well as the fade in transition when page is loaded*/
 .topnav {
   position: fixed;
   inset:0 0 auto 0;
@@ -19,7 +22,6 @@
   padding: 10px;
   z-index: 1000;
 }
-
 
 .topnav button {
   position:relative;
@@ -78,7 +80,6 @@ button::before {
     transform: translateY(0);
   }
 }
-
 
 @keyframes sh02 {
   from {
