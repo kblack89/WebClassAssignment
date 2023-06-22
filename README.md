@@ -22,7 +22,7 @@ https://www.purplethumb.design/
 
 WEBSITE MODERN ELEMENTS 
 
-The modern website elements that I have found are from three websites. I shall list them below and may use all of them or some dependiong on how my website is looking.
+The modern website elements that I have found are from three websites. 
 
 ELEMENTS:
 -Animated image 
