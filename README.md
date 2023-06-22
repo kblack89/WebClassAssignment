@@ -1,5 +1,4 @@
 # WebClassAssignment
-A repo for my Web class assignment
 
 This is my Website Assignment, which uses modern website design and elements. I have used SvelteKit and focused on componants to create this site.
 
@@ -36,5 +35,16 @@ ELEMENTS:
 
 I have created several Kanban issues in the project page for future ideas and things to improve or impliment.
 https://github.com/users/kblack89/projects/1
+
+## Websites That I found helpful or used for learning about website design and elements:
+https://blog.hubspot.com/website/css-transform
+https://uiverse.io/
+http://chat.openai.com/auth/login
+
+
+
+
+
+
 
 
