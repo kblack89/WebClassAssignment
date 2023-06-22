@@ -34,8 +34,7 @@
         />
       {/each}
     </div>
-    
-  
+      
   <style>
     .gallery {
       display: grid;

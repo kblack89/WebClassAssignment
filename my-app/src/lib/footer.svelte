@@ -1,4 +1,3 @@
-
 <footer>
   <nav>
     <ul>
@@ -18,12 +17,12 @@ footer {
     text-align: center;
   }
 
-  a {
+  footer a {
     padding:70px;
     text-decoration: none;   
   }
 
-  a:hover {
+  footer a:hover {
     text-decoration:underline;  
   }
   li {
