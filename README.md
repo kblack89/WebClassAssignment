@@ -34,6 +34,7 @@ ELEMENTS:
 - Selection of static cards that link the user to different things
 - Top nav menu and display grows in size and images appear to grow into existance when the page first loads and then stay static. 
 
-I have created several issues in this repo for future ideas and things to improve or impliment.
+I have created several Kanban issues in the project page for future ideas and things to improve or impliment.
+https://github.com/users/kblack89/projects/1
 
 
