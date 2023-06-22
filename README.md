@@ -11,9 +11,7 @@ Installation instructions:
 
 https://kit.svelte.dev/
 
-## Website inspiration
-
-My three modern web choices:
+## Website inspirations
 
 https://conference.awwwards.com/?utm_source=banner_lists&utm_medium=awwwards&utm_campaign=Conference+Internal&utm_id=normal
 https://bling-website.webflow.io/
@@ -38,8 +36,6 @@ https://github.com/users/kblack89/projects/1
 
 ## Websites That I found helpful or used for learning about website design and elements:
 https://blog.hubspot.com/website/css-transform
-https://uiverse.io/
-http://chat.openai.com/auth/login
 
 
 
