@@ -28,7 +28,6 @@
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 50PX;
-  height: auto;
   margin-left: 100px;
   margin-right: 100px;
   animation: fadeIn 5s;  

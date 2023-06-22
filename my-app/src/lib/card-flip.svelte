@@ -1,45 +1,41 @@
 <script>
-    import { onMount } from "svelte";
+  import { onMount } from "svelte";
   const images = [
     { path: "/images/Elden.jpg", link: "https://store.steampowered.com/app/1245620/ELDEN_RING/" },
-    { path:"/images/batman.jpg", link: "https://store.steampowered.com/app/209000/Batman_Arkham_Origins/" },
-    { path: "/images/battle.jpg",link: "https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" },
-    { path:"/images/cod.jpg",link: "https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/" },
-    { path: "/images/cola.jpg",link: "https://store.steampowered.com/app/377160/Fallout_4/" },
-    { path:"/images/crash.jpg",link: "https://store.steampowered.com/app/1378990/Crash_Bandicoot_4_Its_About_Time/" },
-    { path: "/images/creed.jpg",link: "https://store.steampowered.com/app/911400/Assassins_Creed_III_Remastered/" },
-    { path: "/images/creeper.jpg",link: "https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc" },
-    { path:"/images/dishonored.jpg",link: "https://store.steampowered.com/app/403640/Dishonored_2/" },
-    { path: "/images/dragonborn.jpg",link: "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" },
-    { path:"/images/gow.jpg",link: "https://store.steampowered.com/app/1593500/God_of_War/" },
-    { path: "/images/halo.jpg",link: "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" },
-    { path: "/images/little-nightmares.jpg",link: "https://store.steampowered.com/app/424840/Little_Nightmares/" },
-    { path:"/images/lou.jpg",link: "https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" },
-    { path:"/images/miles.jpg",link: "https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/" },
-    { path: "/images/pika.jpg",link: "https://pokemon-planet.com/" },
-    { path: "/images/sonic.jpg",link: "https://store.steampowered.com/app/584400/Sonic_Mania/" },
-    { path: "/images/fight.jpg",link: "https://store.steampowered.com/app/310950/Street_Fighter_V/" },
-
-    // Add more image paths as needed
+    { path: "/images/batman.jpg", link: "https://store.steampowered.com/app/209000/Batman_Arkham_Origins/" },
+    { path: "/images/battle.jpg", link: "https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" },
+    { path: "/images/cod.jpg", link: "https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/" },
+    { path: "/images/cola.jpg", link: "https://store.steampowered.com/app/377160/Fallout_4/" },
+    { path: "/images/crash.jpg", link: "https://store.steampowered.com/app/1378990/Crash_Bandicoot_4_Its_About_Time/" },
+    { path: "/images/creed.jpg", link: "https://store.steampowered.com/app/911400/Assassins_Creed_III_Remastered/" },
+    { path: "/images/creeper.jpg", link: "https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc" },
+    { path: "/images/dishonored.jpg", link: "https://store.steampowered.com/app/403640/Dishonored_2/" },
+    { path: "/images/dragonborn.jpg", link: "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" },
+    { path: "/images/gow.jpg", link: "https://store.steampowered.com/app/1593500/God_of_War/" },
+    { path: "/images/halo.jpg", link: "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" },
+    { path: "/images/little-nightmares.jpg", link: "https://store.steampowered.com/app/424840/Little_Nightmares/" },
+    { path: "/images/lou.jpg", link: "https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" },
+    { path: "/images/miles.jpg", link: "https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/" },
+    { path: "/images/pika.jpg", link: "https://pokemon-planet.com/" }
   ];
   let isVisible = false;
 
-onMount(() => {
-  function handleScroll() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  onMount(() => {
+    function handleScroll() {
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    isVisible = scrollPosition >= 1100;
-  }
+      isVisible = scrollPosition >= 1100;
+    }
 
-  window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-});
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
 </script>
-
-<div class="{`flipping-card-container ${isVisible ? 'visible' : ''}`}">
+<h1>A collection of epic games!!</h1>
+<div class="card-flip-container {`flipping-card-container ${isVisible ? 'visible' : ''}`}">
   {#each images as image, index}
     <div class="flipping-card">
       <div class="flipping-card-inner">
@@ -53,17 +49,25 @@ onMount(() => {
     </div>
   {/each}
 </div>
+<div class="come-into-view-container">
+
+</div>
 
 <style>
-  .flipping-card-container {
+  .card-flip-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
+    justify-items: center;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .flipping-card {
     background-color: transparent;
-    width: 200px;
+    width: 100%;
     height: 260px;
     perspective: 1000px;
   }
@@ -143,5 +147,9 @@ onMount(() => {
   .flipping-card-container:not(.visible) .flipping-card {
     opacity: 0;
     transition: opacity 1.5s ease;
+  }
+
+  .come-into-view-container {
+    margin-top: 100px;
   }
 </style>

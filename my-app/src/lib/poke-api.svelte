@@ -42,9 +42,10 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 600px;
+    height:100%;
     width: 100%;
     padding: 10px;
+   
   }
 
   .pokeBack {
@@ -96,4 +97,31 @@
   .hidden {
     opacity: 0;
   }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
+    .pokeBack {
+      height: auto;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pokeImage {
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    .pokeData {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
 </style>

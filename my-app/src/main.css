@@ -14,7 +14,8 @@ body {
   padding: 80px;
   text-align: center;
   font-size: 50PX;
-  height: 800px;
+ min-height: 800px;
+  
 }
 
 h2, h1, a, p{
@@ -24,5 +25,18 @@ h2, h1, a, p{
 
 p {
   font-size: 30px;
+}
+
+h1 {
+  font-size: 78px; /* Default font size */
+
+  /* Media queries for responsive font sizes */
+  @media (max-width: 768px) {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px; /* Adjust font size for even smaller screens */
+  }
 }
 

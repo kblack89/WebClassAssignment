@@ -20,12 +20,6 @@
   z-index: 1000;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .topnav button {
   position:relative;
@@ -78,6 +72,13 @@ button::before {
   -o-transform: skewX(-20deg);
   transform: skewX(-20deg);
 }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 @keyframes sh02 {
   from {

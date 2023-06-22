@@ -15,12 +15,12 @@
   }
 
 </script>
-
 <div id="follow" on:mousemove={handleMousemove}>
   <div class ="imageHolder" style="top:{top}px;left:{left}px">
     <img src="/images/jokerme.png" alt="me as joker">
   </div>
 </div>
+
 
 <style>
 
@@ -39,6 +39,7 @@
   top: 50%;
   left: 25%; /* Adjust this value to move the image more to the left */
   transform: translate(-20%, -5%);
+  margin-top: 0px;
 }
   .imageHolder img{
     width:600px;

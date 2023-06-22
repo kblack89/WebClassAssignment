@@ -7,9 +7,15 @@
     { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
     { src: "/images/blue galaxy.jpg", alt: "Image 4 - Description of the image" },
     { src: "/images/lab.jpg", alt: "Image 5 - Description of the image" },
-    { src: "/images/skyhigh.jpg", alt: "Image 3 - Description of the image" },
-    { src: "/images/lab.jpg", alt: "Image 4 - Description of the image" },
-    { src: "/images/blue galaxy.jpg", alt: "Image 5 - Description of the image" }
+    { src: "/images/skyhigh.jpg", alt: "Image 6 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 7 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 8 - Description of the image" },
+    { src: "/images/skyhigh.jpg", alt: "Image 9 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 10 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 11 - Description of the image" },
+    { src: "/images/skyhigh.jpg", alt: "Image 12 - Description of the image" },
+    { src: "/images/lab.jpg", alt: "Image 13 - Description of the image" },
+    { src: "/images/blue galaxy.jpg", alt: "Image 14 - Description of the image" }
   ];
 
   let scrollPosition = 0;

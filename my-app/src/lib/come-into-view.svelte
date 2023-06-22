@@ -16,7 +16,7 @@
   let isContentVisible = false;
 
   function showContent() {
-    if (typeof window !== 'undefined' && !isContentVisible && window.pageYOffset >= 2200) {
+    if (typeof window !== 'undefined' && !isContentVisible && window.pageYOffset >= 2300) {
       isContentVisible = true;
     }
   }
@@ -28,10 +28,10 @@
   });
 </script>
 
-<div class="container">
+<div class="come-into-view-container">
   <h1 class="{`title ${isContentVisible ? 'visible' : ''}`}">MOVIES</h1>
 
-  {#each Array(2) as _} 
+  {#each Array(2) as _}
     <div class="empty-div"></div>
   {/each}
 
@@ -45,12 +45,13 @@
 </div>
 
 <style>
-  .container {
+  .come-into-view-container {
     display: grid;
     grid-template-rows: auto 80px 80px 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
+    margin-top: 100px;
   }
 
   .empty-div {
@@ -63,14 +64,14 @@
     width: 100%;
     height: 350%;
     object-fit: cover;
-    transition: opacity 2s ease, transform 2s ease;
+    transition: opacity 4s ease, transform 4s ease;
     align-self: start;
   }
 
   .text {
     opacity: 0;
     text-align: center;
-    transition: opacity 2s ease;
+    transition: opacity 6s ease;
     align-self: start;
     color:rgb(245, 112, 24);
   }
@@ -83,10 +84,37 @@
   .title {
     font-size: 150px;
     opacity: 0;
-    transition: opacity 2s ease; /* Added transition for title */
+    transition: opacity 6s ease; /* Added transition for title */
   }
 
   .title.visible {
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .come-into-view-container {
+      grid-template-columns: 1fr;
+      width:auto;
+    }
+
+    .image {
+      height: auto;
+    }
+
+    .text {
+      font-size: 24px;
+      height: auto;
+    }
+
+    .title {
+      font-size: 72px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 48px;
+    }
   }
 </style>
