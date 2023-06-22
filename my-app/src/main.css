@@ -15,12 +15,10 @@ body {
   text-align: center;
   font-size: 50PX;
  min-height: 800px;
-  
 }
 
 h2, h1, a, p{
   color:rgb(245, 112, 24);
-  
 }
 
 p {
@@ -28,15 +26,15 @@ p {
 }
 
 h1 {
-  font-size: 78px; /* Default font size */
+  font-size: 78px; 
 
-  /* Media queries for responsive font sizes */
+
   @media (max-width: 768px) {
-    font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 36px; 
   }
 
   @media (max-width: 480px) {
-    font-size: 24px; /* Adjust font size for even smaller screens */
+    font-size: 24px; 
   }
 }
 

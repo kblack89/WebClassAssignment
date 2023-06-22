@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
-  import  GalleryTop  from '$lib/gallery-slideshow.svelte';
-  import  CardFlip  from '$lib/card-flip.svelte';
+  import GalleryTop  from '$lib/gallery-slideshow.svelte';
+  import CardFlip  from '$lib/card-flip.svelte';
   import TopDisp from '$lib/top-content-disp.svelte';
   import ComeIntoView from '../lib/come-into-view.svelte';
   import RandomPokemon from '$lib/poke-api.svelte';  

@@ -1,16 +1,12 @@
 <script>
     import Footer from '$lib/footer.svelte';
     import Animation from '$lib/animation-disp.svelte';
-    import Socialme from '$lib/social.svelte';
-  import Social from '$lib/social.svelte';
+    import Social from '$lib/social.svelte';
 </script>
 
-
-
-
 <div class="general-section">
-  <Animation />
-  </div>
+<Animation />
+</div>
  
 <div class = "general-section">
   <h1>All about Me</h1>
@@ -21,5 +17,4 @@
 <div class = "general-section">
   <Social /> 
 </div>
-
 <Footer />

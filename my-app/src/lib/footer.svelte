@@ -17,15 +17,15 @@ footer {
     text-align: center;
   }
 
-  footer a {
+footer a {
     padding:70px;
     text-decoration: none;   
   }
 
-  footer a:hover {
+footer a:hover {
     text-decoration:underline;  
   }
-  li {
+li {
     display:inline;
   }
   

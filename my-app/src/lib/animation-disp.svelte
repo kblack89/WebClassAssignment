@@ -1,11 +1,10 @@
 <div class="video-container">
   <video autoplay loop src="\animation.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+    Your browser does not support the video tag.
   </video>
 </div>
 
 <style>
- 
   .video-container video {
     position: absolute;
     transform: translate(-50%, 0%);
@@ -14,4 +13,5 @@
     object-fit: cover;
     height: 80vh;
   }
+  
 </style>

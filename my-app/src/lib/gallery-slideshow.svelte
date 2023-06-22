@@ -31,7 +31,7 @@
     }
   }
 </script>
-<h1>Space...Science...Art...</h1>
+<h1>Space... Science... Art...</h1>
 <div class="gallery fade-in" bind:this={el}>
   {#each images as image, index}
     <div class="image-wrapper" style="animation-delay: {index * 1.5}s; transform: translateX({getOffset(el)?.top - scrollPosition < 0 ? getOffset(el)?.top - scrollPosition : 0}px)">

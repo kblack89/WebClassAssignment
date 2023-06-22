@@ -33,7 +33,8 @@
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0);
   }
-  .imageHolder {
+
+.imageHolder {
   pointer-events: none;
   position: absolute;
   top: 50%;
@@ -41,9 +42,9 @@
   transform: translate(-20%, -5%);
   margin-top: 0px;
 }
-  .imageHolder img{
-    width:600px;
-    height:400px;
+.imageHolder img{
+  width:600px;
+  height:400px;
      }
 
 </style>

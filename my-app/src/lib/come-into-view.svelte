@@ -30,15 +30,12 @@
 
 <div class="come-into-view-container">
   <h1 class="{`title ${isContentVisible ? 'visible' : ''}`}">MOVIES</h1>
-
   {#each Array(2) as _}
     <div class="empty-div"></div>
   {/each}
-
   {#each texts as text}
     <div class="{`text ${isContentVisible ? 'visible' : ''}`}">{text}</div>
   {/each}
-
   {#each images as image}
     <img src={image} alt="" class="{`image ${isContentVisible ? 'visible' : ''}`}">
   {/each}

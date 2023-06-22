@@ -45,7 +45,6 @@
     height:100%;
     width: 100%;
     padding: 10px;
-   
   }
 
   .pokeBack {
@@ -56,6 +55,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 10px;
+    background-size:cover;
+    background-position: center;
   }
 
   .pokeImage {
@@ -88,7 +89,6 @@
     margin-top: 0;
     text-align: right;
     margin-right: 10px;
-
   }
   .visible {
     opacity: 1;
@@ -117,7 +117,6 @@
     img {
       width: 80%;
     }
-
     .pokeData {
       padding-left: 0;
       text-align: center;

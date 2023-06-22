@@ -12,7 +12,7 @@
     "/images/snakewold.jpg",
     "/images/noms.jpg",
     "/images/town.jpg"
-  ];
+     ];
 
   let hoveredImage = null;
 
@@ -28,14 +28,13 @@
 <div>
   <h2>Some spooky art to enjoy..</h2>
 </div>
-<div class="gallery">
-  {#each images as image}
-    <img src={image} alt="Really cool stuff" 
-      on:mouseenter={() => handleHover(image)}
-      on:mouseleave={handleLeave}
-      class:hovered={hoveredImage !== null && hoveredImage !== image}
-    />
-  {/each}
+  <div class="gallery">
+    {#each images as image}
+      <img src={image} alt="Really cool stuff" 
+        on:mouseenter={() => handleHover(image)}
+        on:mouseleave={handleLeave}
+        class:hovered={hoveredImage !== null && hoveredImage !== image}/>
+    {/each}
 </div>
 
 <style>
